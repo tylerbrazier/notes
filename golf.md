@@ -5,7 +5,7 @@ Driving
 -------
 - left arm straight
 - imagine the club is a pendulum
-- might need to tilt club head in a little to prevent slicing
-- might need to aim below the ball the prevent topping
+- to prevent slicing: tilt club head a little, focus on keeping wrists straight
+- to prevent topping: aim below the ball instead of at it
 
 Had good consistent drives at the range after discovering these things.

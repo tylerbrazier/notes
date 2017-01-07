@@ -7,6 +7,8 @@ Bash has emacs-style keybindings by default (`set -o vi` for vi-like bindings).
 
 - `<c-a>`/`<c-e>` to jump to beginning/end of line
 - `<c-n>`/`<c-p>` to go to next/previous line
+- `<c-w>` to delete previous word
+- `<c-u>` to delete the whole line
 - `<c-r>` to reverse-search command history
 - `<c-l>` to clear the screen
 - `<c-c>` to cancel (actually SIGINT) the current process

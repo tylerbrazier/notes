@@ -12,3 +12,11 @@ The biggest thing that keeps people from using vim is the learning curve.
 Vim is no different than anything else that's rewarding, it requires some
 upfront effort; but the payoff is worth it. Probably the best way to start is
 the `vimtutor` command.
+
+
+## Spelling
+Toggle spell checking with `:set invspell`.
+
+- `]s` jump to next misspelled word
+- `[s` jump to previous misspelled word
+- `z=` on a misspelled word to correct it

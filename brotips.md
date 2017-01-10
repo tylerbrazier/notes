@@ -10,3 +10,7 @@ don't even know it's a problem and they have no chance to correct it. That's not
 fair to the other person and it only sits there and pokes you like a thorn in
 your side. Just like if I have a piece of food on my face, I'd rather if
 someone told me about it than let it sit there.
+
+Try not to be intolerant of things or people (e.g. inefficient stoplights or
+crappy software for me). Intolerance just makes for a unopened mind and helps
+to ruin your day.

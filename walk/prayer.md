@@ -1,12 +1,16 @@
 It's easy for me to pray for what I want. It's better for me to pray for
-understanding what God wants me to do. This is how Jesus operated ([John
-5:30][John 5:30], [John 8:28][John 8:28], [Luke 22:42][Luke 22:42]). If I do
-what he would have me do, and have faith, then he will do good things for me
-([Romans 8:28][Romans 8:28], [Hebrews 11:6][Hebrews 11:6],
-[Matthew 6:25-34][Matthew 6:25-34]); what kind of dad wouldn't want the best
-for his kids?
+understanding what God wants me to do ([Matthew 16:23-26][Matthew 16:23-26],
+[Mark 8:33-35][Mark 8:33-35], [Luke 9:23-25][Luke 9:23-25]).
+This is how Jesus operated ([John 5:30][John 5:30], [John 8:28][John 8:28],
+[Luke 22:42][Luke 22:42]). If I do what he would have me do, and have faith,
+then he will do good things for me ([Romans 8:28][Romans 8:28],
+[Hebrews 11:6][Hebrews 11:6], [Matthew 6:25-34][Matthew 6:25-34]); what kind of
+dad wouldn't want the best for his kids?
 
 
+[Matthew 16:23-26]: https://www.blueletterbible.org/nasb/Matthew/16/23-26 "(NET) 16:23 But he turned and said to Peter, “Get behind me, Satan! You are a stumbling block to me, because you are not setting your mind on God’s interests, but on man’s.” 24 Then Jesus said to his disciples, “If anyone wants to become my follower, he must deny himself, take up his cross, and follow me. 25 For whoever wants to save his life will lose it, but whoever loses his life for my sake will find it. 26 For what does it benefit a person if he gains the whole world but forfeits his life? Or what can a person give in exchange for his life? "
+[Mark 8:33-35]: https://www.blueletterbible.org/nasb/Mark/8/33-35 "(NET) 8:33 But after turning and looking at his disciples, he rebuked Peter and said, “Get behind me, Satan. You are not setting your mind on God’s interests, but on man’s.” Following Jesus34 Then Jesus called the crowd, along with his disciples, and said to them, “If anyone wants to become my follower, he must deny himself, take up his cross, and follow me. 35 For whoever wants to save his life will lose it, but whoever loses his life for my sake and for the gospel will save it. "
+[Luke 9:23-25]: https://www.blueletterbible.org/nasb/Luke/9/23-25 "(NET) A Call to Discipleship9:23 Then he said to them all, “If anyone wants to become my follower, he must deny himself, take up his cross daily, and follow me. 24 For whoever wants to save his life will lose it, but whoever loses his life for my sake will save it. 25 For what does it benefit a person if he gains the whole world but loses or forfeits himself? "
 [John 5:30]: https://www.blueletterbible.org/nasb/John/5/30 "(NET) 5:30 I can do nothing on my own initiative. Just as I hear, I judge, and my judgment is just, because I do not seek my own will, but the will of the one who sent me. "
 [John 8:28]: https://www.blueletterbible.org/nasb/John/8/28 "(NET) 8:28 Then Jesus said, “When you lift up the Son of Man, then you will know that I am he, and I do nothing on my own initiative, but I speak just what the Father taught me. "
 [Luke 22:42]: https://www.blueletterbible.org/nasb/Luke/22/42 "(NET) 22:42 “Father, if you are willing, take this cup away from me. Yet not my will but yours be done.” "

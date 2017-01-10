@@ -17,6 +17,7 @@ There are a lot of evidence for the necessity and power of faith:
 - [Matthew 15:28][Matthew 15:28]
 - [Matthew 21:21][Matthew 21:21], [Mark 11:22-24][Mark 11:22-24]
 - [Luke 17:19][Luke 17:19]
+- [Mark 9:22-24][Mark 9:22-24]
 
 It seems to me that a prayer without faith isn't worth much.
 
@@ -50,6 +51,7 @@ you get that experience by being close with him.
 [Matthew 21:21]: https://www.blueletterbible.org/nasb/Matthew/21/21 "(NET) 21:21 Jesus answered them, “I tell you the truth, if you have faith and do not doubt, not only will you do what was done to the fig tree, but even if you say to this mountain, ‘Be lifted up and thrown into the sea,’ it will happen. "
 [Mark 11:22-24]: https://www.blueletterbible.org/nasb/Mark/11/22-24 "(NET) 11:22 Jesus said to them, “Have faith in God. 23 I tell you the truth, if someone says to this mountain, ‘Be lifted up and thrown into the sea,’ and does not doubt in his heart but believes that what he says will happen, it will be done for him. 24 For this reason I tell you, whatever you pray and ask for, believe that you have received it, and it will be yours. "
 [Luke 17:19]: https://www.blueletterbible.org/nasb/Luke/17/19 "(NET) 17:19 Then he said to the man, “Get up and go your way. Your faith has made you well.” "
+[Mark 9:22-24]: https://www.blueletterbible.org/nasb/Mark/9/22-24 "(NET) 9:22 It has often thrown him into fire or water to destroy him. But if you are able to do anything, have compassion on us and help us.” 23 Then Jesus said to him, “‘If you are able?’ All things are possible for the one who believes.” 24 Immediately the father of the boy cried out and said, “I believe; help my unbelief!” "
 [Romans 10:17]: https://www.blueletterbible.org/nasb/Romans/10/17 "(NET) 10:17 Consequently faith comes from what is heard, and what is heard comes through the preached word of Christ. "
 [James 4:8]: https://www.blueletterbible.org/nasb/James/4/8 "(NET) 4:8 Draw near to God and he will draw near to you. Cleanse your hands, you sinners, and make your hearts pure, you double-minded. "
 [2 Chronicles 15:2]: https://www.blueletterbible.org/nasb/2Chronicles/15/2 "(NET) 15:2 He met Asa and told him, “Listen to me, Asa and all Judah and Benjamin! The Lord is with you when you are loyal to him. If you seek him, he will respond to you, but if you reject him, he will reject you. "

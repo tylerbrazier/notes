@@ -14,3 +14,8 @@ someone told me about it than let it sit there.
 Try not to be intolerant of things or people (e.g. inefficient stoplights or
 crappy software for me). Intolerance just makes for a unopened mind and helps
 to ruin your day.
+
+Rewarding things require upfront effort. You're only proud of the things you
+worked for. There's a tradeoff between satisfaction now vs later. Delayed
+gratification also tends to come with the bonus of "I feel good about myself";
+instant gratification tends to result in feelings of guilt.

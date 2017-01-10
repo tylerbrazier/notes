@@ -1,5 +1,5 @@
 # Systemd unit for starting remote forwarding from server to local machine.
-# See notes/ssh_remote_forwarding.md.
+# See notes/ssh.md.
 # Edit User and ExecStart below and drop this file in /etc/systemd/system/
 # Then you can start and enable it like any other systemd unit.
 

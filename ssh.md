@@ -1,7 +1,10 @@
+[SSH][0] notes
+==============
+
 Remote Forwarding
 -----------------
 You can use SSH to connect to another computer sitting behind a NAT (e.g. your
-[raspberry pi][0] at home) by setting up a tunnel between the pi and your
+[raspberry pi][1] at home) by setting up a tunnel between the pi and your
 server. For this example, 'rpi' will be the machine we want to connect to.
 
     client ---- server ---- NAT -- rpi
@@ -38,4 +41,5 @@ default, ssh only allows localhost traffic from the server to be forwarded
 Remember to adjust your iptables as needed.
 
 
-[0]: https://en.wikipedia.org/wiki/Raspberry_Pi
+[0]: https://wiki.archlinux.org/index.php/Secure_Shell
+[1]: https://en.wikipedia.org/wiki/Raspberry_Pi

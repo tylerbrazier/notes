@@ -14,3 +14,7 @@ Comics
 ------
 - [xkcd](http://xkcd.com/)
 - [turnoff.us](http://turnoff.us/)
+
+Games
+-----
+[Minesweeper](http://minesweeperonline.com/#150-night)

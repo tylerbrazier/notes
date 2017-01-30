@@ -19,3 +19,10 @@ Rewarding things require upfront effort. You're only proud of the things you
 worked for. There's a tradeoff between satisfaction now vs later. Delayed
 gratification also tends to come with the bonus of "I feel good about myself";
 instant gratification tends to result in feelings of guilt.
+
+When you breakup with someone, it's best to bite the bullet and disconnect from
+that person as much as possible. A relationship is like Velcro and the fewer
+ties you have to that person the easier it will be separate from them. Avoid
+talking with that person, delete all of your pictures together, get rid of
+their gifts to you, and stop following them on social media. The fewer
+reminders you have of that person, the easier it will be to move forward.

@@ -9,8 +9,6 @@ why they feel the way that they do. I can practice humility and mercy if I can
 catch myself when I think negatively about someone else and honestly try to
 sympathise for them instead ([Luke 23:33-34][]).
 
-Also, humility isn't thinking less of myself, but thinking about myself less.
-
 
 [Luke 18:9-14]: https://www.blueletterbible.org/nasb/Luke/18/9-14
   "(NET) The Parable of the Pharisee and Tax Collector18:9 Jesus also told this parable to some who were confident that they were righteous and looked down on everyone else. 10 “Two men went up to the temple to pray, one a Pharisee and the other a tax collector. 11 The Pharisee stood and prayed about himself like this: ‘God, I thank you that I am not like other people: extortionists, unrighteous people, adulterers &#8211; or even like this tax collector. 12 I fast twice a week; I give a tenth of everything I get.’ 13 The tax collector, however, stood far off and would not even look up to heaven, but beat his breast and said, ‘God, be merciful to me, sinner that I am!’ 14 I tell you that this man went down to his home justified rather than the Pharisee. For everyone who exalts himself will be humbled, but he who humbles himself will be exalted.”"

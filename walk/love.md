@@ -1,10 +1,10 @@
-Throughout my whole teenage life, my stance on fornication (sex before
-marriage) was that as long as she's okay with it, then so am I. However, nearly
-all of the genuine Christians that I've known don't condone it and I decided to
-question why it's such a big deal. First, where do you draw the line between
-what's acceptable and what's not? Is foreplay acceptable? At what point is
-kissing acceptable? I decided to generalize these things under the category of
-"intimacy". Next I thought about what marriage is: I suppose it's a kind of
+(December 2015) Throughout my whole teenage life, my stance on fornication (sex
+before marriage) was that as long as she's okay with it, then so am I. However,
+nearly all of the genuine Christians that I've known don't condone it and I
+decided to question why it's such a big deal. First, where do you draw the line
+between what's acceptable and what's not? Is foreplay acceptable? At what point
+is kissing acceptable? I decided to generalize these things under the category
+of "intimacy". Next I thought about what marriage is: I suppose it's a kind of
 contract where each promises to give themselves completely to the other.
 
 For weeks I had thought about this and could not come up with anything to

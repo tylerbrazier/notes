@@ -28,3 +28,30 @@ to toggle).
 - `*` to forward search for word under cursor, `#` to backwards search
   (very useful for finding usages of variables in code)
 - `n` to go to next search match, `N` for previous
+
+
+## Plugins
+[vim-plug](https://github.com/junegunn/vim-plug) is a great plugin manager.
+
+### Gitgutter
+[gitgutter](https://github.com/airblade/vim-gitgutter) is an essential.
+
+- `]c` jump to next change
+- `[c` jump to previous change
+- `<leader>hp` (hunk preview) see the diff at the current change hunk
+- `<leader>hu` (hunk undo) undo a change hunk
+- `<leader>hs` (hunk stage) add the current change hunk to the index
+
+(`<leader>` is mapped from `\` by default; `:help mapleader`)
+
+### Fugitive
+[fugitive](https://github.com/tpope/vim-fugitive) adds a bunch of useful git
+stuff to vim. I have mappings for the common stuff I use in [vimrc][].
+Use `g?` in a fugitive window (`Gstatus`, `Gblame`, etc.) to see what mappings
+you have available in that window. `o` and `O` are very handy for opening
+files, commits, etc. in a new split or tab; you can even use it on the `@@`
+lines when viewing a commit (with `:Glog --`) to vimdiff that commit in a new
+tab.
+
+
+[vimrc]: https://github.com/tylerbrazier/dotfiles/blob/master/vimrc

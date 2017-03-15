@@ -15,11 +15,13 @@ the `vimtutor` command.
 
 
 ## Spelling
-Toggle spell checking with `:set invspell`.
+Turn on spell checking with `:set spell` (`nospell` to turn off, or `invspell`
+to toggle).
 
 - `]s` jump to next misspelled word
 - `[s` jump to previous misspelled word
 - `z=` on a misspelled word to correct it
+
 
 ## Search
 - `/` to forward search for pattern, `?` for backwards search

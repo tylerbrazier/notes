@@ -25,7 +25,7 @@ Games
 - [TCGPlayer](http://www.tcgplayer.com/) for buying
 - [MTG Press](http://mtgpress.net/) for printing cards to build a cube with.
   Use [this script][mtgpress.user.js] to change every card to a single set and
-  use custom cutline borders.
+  use custom cutline borders (`3px solid #333` is good).
 
 
 [Taco Bell Programming]: http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html

@@ -5,6 +5,7 @@ Articles worth reading
 - [How to receive a million packets][] ([hn discussion](https://news.ycombinator.com/item?id=9726185))
 - [Crash Bandicoot on 2MB of RAM][] ([hn discussion](https://news.ycombinator.com/item?id=9737156))
 - [When or when not to use React][] ([hn discussion](https://news.ycombinator.com/item?id=10068719))
+- [This motherfucking website][] ([hn discussion](https://news.ycombinator.com/item?id=6791297))
 
 Blogs
 -----
@@ -36,3 +37,4 @@ Games
 [Card Kingdom]: http://www.cardkingdom.com/catalog/magic_the_gathering/search
 [gatherer]: http://gatherer.wizards.com/Pages/Default.aspx
 [mtgpress.user.js]: https://github.com/tylerbrazier/archive/blob/master/mtgpress.user.js
+[This motherfucking website][]: http://motherfuckingwebsite.com/

@@ -11,6 +11,12 @@ Blogs
 -----
 - [Netflix tech blog](http://techblog.netflix.com/)
 
+Learning
+--------
+- Operating systems course videos <https://www.ops-class.org/>
+- [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)
+- [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)
+
 Comics
 ------
 - [xkcd](http://xkcd.com/)

@@ -5,11 +5,11 @@ Articles worth reading
 - [How to receive a million packets][] ([hn discussion](https://news.ycombinator.com/item?id=9726185))
 - [Crash Bandicoot on 2MB of RAM][] ([hn discussion](https://news.ycombinator.com/item?id=9737156))
 - [When or when not to use React][] ([hn discussion](https://news.ycombinator.com/item?id=10068719))
-- [This motherfucking website][] ([hn discussion](https://news.ycombinator.com/item?id=6791297))
+- <http://motherfuckingwebsite.com/> ([hn discussion](https://news.ycombinator.com/item?id=6791297))
 
 Blogs
 -----
-- [Netflix tech blog](http://techblog.netflix.com/)
+- <http://techblog.netflix.com/>
 
 Learning
 --------
@@ -19,18 +19,18 @@ Learning
 
 Comics
 ------
-- [xkcd](http://xkcd.com/)
-- [turnoff.us](http://turnoff.us/)
+- <http://xkcd.com/>
+- <http://turnoff.us/>
 
 Games
 -----
 - [Minesweeper](http://minesweeperonline.com/#150-night)
 
 ### MtG
-- [Tappedout](http://tappedout.net/) for deck building
+- <http://tappedout.net/> for deck building
 - [Card Kingdom][] for card search (easier to use than [gatherer][])
-- [TCGPlayer](http://www.tcgplayer.com/) for buying
-- [MTG Press](http://mtgpress.net/) for printing cards to build a cube with.
+- <http://www.tcgplayer.com/> for buying
+- <http://mtgpress.net/> for printing cards to build a cube with.
   Use [this script][mtgpress.user.js] to change every card to a single set and
   use custom cutline borders (`3px solid #333` is good).
 
@@ -43,4 +43,3 @@ Games
 [Card Kingdom]: http://www.cardkingdom.com/catalog/magic_the_gathering/search
 [gatherer]: http://gatherer.wizards.com/Pages/Default.aspx
 [mtgpress.user.js]: https://github.com/tylerbrazier/archive/blob/master/mtgpress.user.js
-[This motherfucking website][]: http://motherfuckingwebsite.com/

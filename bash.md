@@ -1,5 +1,6 @@
-[Bash][0]
-=========
+Bash
+====
+<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>
 
 Shortcuts
 ---------
@@ -26,6 +27,3 @@ Basic Commands
 - `cd [directory]` change working directory; defaults to home
 - `cd -` change back to previous directory
 - `cat <file>` print out the contents of a file
-
-
-[0]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)

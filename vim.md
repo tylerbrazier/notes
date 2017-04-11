@@ -34,7 +34,7 @@ to toggle).
 [vim-plug](https://github.com/junegunn/vim-plug) is a great plugin manager.
 
 ### Gitgutter
-[gitgutter](https://github.com/airblade/vim-gitgutter) is an essential.
+[gitgutter](https://github.com/airblade/vim-gitgutter) shows line changes.
 
 - `]c` jump to next change
 - `[c` jump to previous change
@@ -52,6 +52,11 @@ you have available in that window. `o` and `O` are very handy for opening
 files, commits, etc. in a new split or tab; you can even use it on the `@@`
 lines when viewing a commit (with `:Glog --`) to vimdiff that commit in a new
 tab.
+
+- `:Gmerge` to resolve conflicts (even after a `git merge/pull/rebase`),
+  then `:cn/:cp` for next/previous conflict
+- in `Gstatus` window, `-` to stage or unstage files
+- in `Gblame` window, `P` to see more history (parent commits) for a line
 
 
 [vimrc]: https://github.com/tylerbrazier/dotfiles/blob/master/vimrc

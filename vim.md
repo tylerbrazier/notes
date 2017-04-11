@@ -30,6 +30,13 @@ to toggle).
 - `n` to go to next search match, `N` for previous
 
 
+## Line numbers
+- `:set nu` to show line numbers (`nonu` to turn off, `invnu` to toggle).
+- The default statusline shows the current line (and column) number;
+  `set laststatus=2` to always show the statusline.
+- `55G` to jump to line 55.
+
+
 ## Plugins
 [vim-plug](https://github.com/junegunn/vim-plug) is a great plugin manager.
 

@@ -27,7 +27,10 @@ to toggle).
 - `/` to forward search for pattern, `?` for backwards search
 - `*` to forward search for word under cursor, `#` to backwards search
   (very useful for finding usages of variables in code)
-- `n` to go to next search match, `N` for previous
+- `gd` (goto definition) to search and jump to first occurrence of word under
+  cursor
+- `n` to jump to next search match, `N` for previous
+- `ctrl-o` (jump out) to go back one jump, `ctrl-i` (jump in) to go forward
 
 
 ## Line numbers

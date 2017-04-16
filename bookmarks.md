@@ -32,7 +32,7 @@ Games
 - <http://www.tcgplayer.com/> for buying
 - <http://mtgpress.net/> for printing cards to build a cube with.
   Use [this script][mtgpress.user.js] to change every card to a single set and
-  use custom cutline borders (`3px solid #333` is good).
+  use custom cutline borders; check the comments at the top of the file.
 
 
 [Taco Bell Programming]: http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
@@ -42,4 +42,4 @@ Games
 [When or when not to use React]: http://blog.andrewray.me/reactjs-for-stupid-people/
 [Card Kingdom]: http://www.cardkingdom.com/catalog/magic_the_gathering/search
 [gatherer]: http://gatherer.wizards.com/Pages/Default.aspx
-[mtgpress.user.js]: https://github.com/tylerbrazier/archive/blob/master/mtgpress.user.js
+[mtgpress.user.js]: https://github.com/tylerbrazier/archive/blob/master/mtg/mtgpress.user.js

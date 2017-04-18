@@ -27,3 +27,20 @@ Basic Commands
 - `cd [directory]` change working directory; defaults to home
 - `cd -` change back to previous directory
 - `cat <file>` print out the contents of a file
+
+Grep
+----
+`grep` to search for text in files using [regex][].
+
+`grep needle haystack.md` searches for the text 'needle' in haystack.md.
+
+Leave out the file to read from stdin: `ls -l large_dir/ | grep is_it_there`
+
+- `-i` for case-insensitive search
+- `-w` to match whole words (`hard` matches 'hard water' but not 'hardly')
+- `-F` for literal matching instead of regex
+- `-r` for recursive search: `grep -r caboose .` searches for 'caboose' in all
+  files nested in the current directory
+
+
+[regex]: http://man7.org/linux/man-pages/man1/grep.1.html#REGULAR_EXPRESSIONS

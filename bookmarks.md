@@ -10,6 +10,7 @@ Articles worth reading
 Blogs
 -----
 - <http://techblog.netflix.com/>
+- This guy who reverse engineered SF II: <https://sf2platinum.wordpress.com/>
 
 Learning
 --------

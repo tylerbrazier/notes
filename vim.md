@@ -68,5 +68,19 @@ tab.
 - in `Gstatus` window, `-` to stage or unstage files
 - in `Gblame` window, `P` to see more history (parent commits) for a line
 
+### CtrlP
+[CtrlP](https://github.com/ctrlpvim/ctrlp.vim) is a fuzzy file finder.
+
+- `<c-p>` to open finder
+- `<c-k>`/`<c-j>` move up/down
+- `<c-n>`/`<c-p>` cycle forward/backward in search history
+- `<c-t>` open selected file in new tab
+- `<c-t>` open selected file in new tab
+- `<c-s>` open selected file in horizontal split
+- `<c-v>` open selected file in vertical split
+- `<c-z>` mark multiple files, then `<c-t>`/`<c-s>`/`<c-v>` to open them
+- `<c-r>` toggle regex searching instead of fuzzy; useful to force your search
+  chars to be consecutive in matches
+
 
 [vimrc]: https://github.com/tylerbrazier/dotfiles/blob/master/vimrc

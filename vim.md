@@ -11,7 +11,7 @@ Vim
 The biggest thing that keeps people from using vim is the learning curve.
 Vim is no different than anything else that's rewarding, it requires some
 upfront effort; but the payoff is worth it. Probably the best way to start is
-the `vimtutor` command.
+the `vimtutor` command. There's also [a game](https://vim-adventures.com/).
 
 
 ## Spelling

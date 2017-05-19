@@ -14,13 +14,13 @@ upfront effort; but the payoff is worth it. Probably the best way to start is
 the `vimtutor` command. There's also [a game](https://vim-adventures.com/).
 
 
-## Spelling
-Turn on spell checking with `:set spell` (`nospell` to turn off, or `invspell`
-to toggle).
-
+## Spell checking
+- `:set spell` to enable
+- `:set nospell` to disable
+- `:set invspell` to invert (toggle)
 - `]s` jump to next misspelled word
 - `[s` jump to previous misspelled word
-- `z=` on a misspelled word to correct it
+- `z=` on a misspelled word for correction suggestions
 
 
 ## Search

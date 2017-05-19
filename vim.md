@@ -73,7 +73,8 @@ tab.
 
 - `<c-p>` to open finder
 - `<c-k>`/`<c-j>` move up/down
-- `<c-n>`/`<c-p>` cycle forward/backward in search history
+- `<c-n>`/`<c-p>` cycle next/previous in search history
+- `<c-f>`/`<c-b>` cycle forward/backward between modes (files, buffers, MRU)
 - `<c-t>` open selected file in new tab
 - `<c-t>` open selected file in new tab
 - `<c-s>` open selected file in horizontal split

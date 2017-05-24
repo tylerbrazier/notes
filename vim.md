@@ -1,6 +1,6 @@
-Vim
-===
-## Why use it?
+# Vim
+
+## Why?
 - Edit text very fast once you learn it.
 - Doesn't need a GUI; can be used on headless servers.
 - It's available on all major operating systems.
@@ -13,6 +13,38 @@ Vim is no different than anything else that's rewarding, it requires some
 upfront effort; but the payoff is worth it. Probably the best way to start is
 the `vimtutor` command. There's also [a game](https://vim-adventures.com/).
 
+## In and out
+Vim starts in *normal* mode; your keystrokes enter commands, not text.
+To enter text, you need to be in *insert* mode.
+
+- `i` to enter insert mode
+- `<esc>` to leave insert mode
+- `:w` (or `:write`) to save changes
+- `:q` (or `:quit`) to exit
+- `:wq` write and quit
+- `:q!` quit without warning about unsaved changes
+
+## Movement
+One of the things that makes editing text in vim fast is that your hands don't
+leave the keyboard; no arrow keys, no mouse.
+
+- `j` moves the cursor down (it helps to remember that it like a hook)
+- `k` moves up
+- `h` moves left
+- `l` moves right
+
+*word*s include letters, numbers, and underscores.  
+*WORD*s include anything besides whitespace.
+
+- `w` move to beginning of next word. `W` for WORD
+- `e` move to end of word. `E` for WORD
+- `b` move back one word. `B` for WORD
+- `f` (find) followed by a character to move to that character on the line.
+  `F` to find in reverse
+- `t` ('til) followed by a character to move right before (until) that character on the line.
+  `T` to 'til in reverse
+- `;` repeat last `f`, `F`, `t`, or `T`.
+  `,` to repeat in reverse
 
 ## Spell checking
 - `:set spell` to enable

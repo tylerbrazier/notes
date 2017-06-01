@@ -46,6 +46,24 @@ leave the keyboard; no arrow keys, no mouse.
 - `;` repeat last `f`, `F`, `t`, or `T`.
   `,` to repeat in reverse
 
+## Jump around
+- `gg` jump to top of file
+- `G` jump to bottom of file or precede with a number to jump to that line number
+- `H` jump cursor to top of view
+- `L` jump cursor to bottom of view
+- `M` jump cursor to middle of view
+- `ctrl-o` (jump out) unjump once
+- `ctrl-i` (jump in) rejump once
+
+## Search
+- `/` followed by pattern to search for pattern.
+  `?` to search in reverse
+- `*` search for word under cursor (very useful to find usages of variables).
+  `#` to search in reverse
+- `gd` (goto definition) jump to definition of variable under cursor
+- `n` jump to next search match.
+  `N` to jump to previous match
+
 ## Spell checking
 - `:set spell` to enable
 - `:set nospell` to disable
@@ -54,22 +72,10 @@ leave the keyboard; no arrow keys, no mouse.
 - `[s` jump to previous misspelled word
 - `z=` on a misspelled word for correction suggestions
 
-
-## Search
-- `/` to forward search for pattern, `?` for backwards search
-- `*` to forward search for word under cursor, `#` to backwards search
-  (very useful for finding usages of variables in code)
-- `gd` (goto definition) to search and jump to first occurrence of word under
-  cursor
-- `n` to jump to next search match, `N` for previous
-- `ctrl-o` (jump out) to go back one jump, `ctrl-i` (jump in) to go forward
-
-
 ## Line numbers
-- `:set nu` to show line numbers (`nonu` to turn off, `invnu` to toggle).
-- The default statusline shows the current line (and column) number;
-  `set laststatus=2` to always show the statusline.
-- `55G` to jump to line 55.
+- `:set nu[mber]` to show line numbers
+- `:set nonu` to turn off
+- `:set invnu` to invert (toggle)
 
 
 ## Plugins

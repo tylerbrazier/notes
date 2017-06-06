@@ -13,7 +13,7 @@ Vim is no different than anything else that's rewarding, it requires some
 upfront effort; but the payoff is worth it. Probably the best way to start is
 the `vimtutor` command. There's also [a game](https://vim-adventures.com/).
 
-## In and out
+## Primer
 Vim starts in *normal* mode; your keystrokes enter commands, not text.
 To enter text, you need to be in *insert* mode.
 
@@ -23,6 +23,8 @@ To enter text, you need to be in *insert* mode.
 - `:q` (or `:quit`) to exit
 - `:wq` write and quit
 - `:q!` quit without warning about unsaved changes
+- `:h` (or `:help`) optionally followed by a subject to open the help window
+  (e.g. `:h :w` to read about the write command). `:q` to close the window
 
 ## Movement
 One of the things that makes editing text in vim fast is that your hands don't

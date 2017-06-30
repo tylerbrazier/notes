@@ -21,12 +21,18 @@ Bash has emacs-style keybindings by default (`set -o vi` for vi-like bindings).
 
 Basic Commands
 --------------
-- `man <command>` to read the manual page for any command
-- `pwd` print working (current) directory
-- `ls [directory]` to list files in a directory; defaults to current directory
-- `cd [directory]` change working directory; defaults to home
-- `cd -` change back to previous directory
-- `cat <file>` print out the contents of a file
+### Navigating the file system
+- `pwd` prints the cwd (current working directory)
+- `ls [directory]` to list files in a directory; defaults to cwd
+  - `-l` (e.g. `ls -l`) for long format; gives more info about each file
+  - `-a` to show all files, including hidden files (which start with a `.`)
+  - `ls -l -a` or `ls -la` to do both
+- `cd [directory]` change working directory; defaults to your home directory
+  - `cd -` change back to previous directory
+
+`.` means cwd, `..` means parent of cwd, `~` means your home directory;
+e.g. `cd ../..` will move up two directories; `ls -a ~` lists all the files in
+your home directory.
 
 Grep
 ----

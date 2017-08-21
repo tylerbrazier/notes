@@ -1,9 +1,10 @@
-Bash
-====
+# Bash
+
 <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>
 
-Shortcuts
----------
+## Shortcuts
+
+### Keyboard shortcuts
 Bash has emacs-style keybindings by default (`set -o vi` for vi-like bindings).
 
 - `<c-a>`/`<c-e>` to jump to beginning/end of line
@@ -15,27 +16,27 @@ Bash has emacs-style keybindings by default (`set -o vi` for vi-like bindings).
 - `<c-c>` to cancel (actually SIGINT) the current process
 - `<c-d>` to exit
 - `<tab>` to auto-complete commands, paths, etc.
-- `!!` is a shortcut for the previous command
+
+### Command shortcuts
+- `!!` is a shortcut for the previous command (e.g. `sudo !!` is common)
 - `!$` is a shortcut for the last argument of the previous command
+- `~` is a shortcut for your home directory (e.g. `/home/tyler`)
+- `.` is a shortcut for the current working directory (cwd)
+- `..` is a shortcut for the parent of the cwd
 
 
-Basic Commands
---------------
+## Basic Commands
+
 ### Navigating the file system
-- `pwd` prints the cwd (current working directory)
+- `pwd` prints the current working directory (cwd)
 - `ls [directory]` to list files in a directory; defaults to cwd
   - `-l` (e.g. `ls -l`) for long format; gives more info about each file
   - `-a` to show all files, including hidden files (which start with a `.`)
   - `ls -l -a` or `ls -la` to do both
 - `cd [directory]` change working directory; defaults to your home directory
-  - `cd -` change back to previous directory
+  - `cd -` change back to previous cwd
 
-`.` means cwd, `..` means parent of cwd, `~` means your home directory;
-e.g. `cd ../..` will move up two directories; `ls -a ~` lists all the files in
-your home directory.
-
-Grep
-----
+## Grep
 `grep` to search for text in files using [regex][].
 
 `grep needle haystack.md` searches for the text 'needle' in haystack.md.

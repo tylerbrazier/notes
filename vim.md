@@ -81,10 +81,10 @@ leave the keyboard; no arrow keys, no mouse.
 
 
 ## Plugins
-[vim-plug](https://github.com/junegunn/vim-plug) is a great plugin manager.
+[vim-plug][] to manage plugins.
 
 ### Gitgutter
-[gitgutter](https://github.com/airblade/vim-gitgutter) shows line changes.
+[gitgutter][] for viewing and working with groups of git changes (aka hunks).
 
 - `]c` jump to next change
 - `[c` jump to previous change
@@ -94,20 +94,24 @@ leave the keyboard; no arrow keys, no mouse.
 
 (`<leader>` is mapped from `\` by default; `:help mapleader`)
 
+The plugin also provides `ic` and `ac` text objects so you can do combos like
+`dac` to 'delete a change'.
+
 ### CtrlP
-[CtrlP](https://github.com/ctrlpvim/ctrlp.vim) is a fuzzy file finder.
+[ctrlp][] is a fuzzy file finder.
 
 - `<c-p>` to open finder
 - `<c-k>`/`<c-j>` move up/down
 - `<c-n>`/`<c-p>` cycle next/previous in search history
 - `<c-f>`/`<c-b>` cycle forward/backward between modes (files, buffers, MRU)
 - `<c-t>` open selected file in new tab
-- `<c-t>` open selected file in new tab
 - `<c-s>` open selected file in horizontal split
 - `<c-v>` open selected file in vertical split
 - `<c-z>` mark multiple files, then `<c-t>`/`<c-s>`/`<c-v>` to open them
 - `<c-r>` toggle regex searching instead of fuzzy; useful to force your search
-  chars to be consecutive in matches
+  characters to be consecutive
 
 
-[vimrc]: https://github.com/tylerbrazier/dotfiles/blob/master/vimrc
+[vim-plug]: https://github.com/junegunn/vim-plug
+[gitgutter]: https://github.com/airblade/vim-gitgutter
+[ctrlp]: https://github.com/ctrlpvim/ctrlp.vim

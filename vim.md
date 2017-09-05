@@ -94,20 +94,6 @@ leave the keyboard; no arrow keys, no mouse.
 
 (`<leader>` is mapped from `\` by default; `:help mapleader`)
 
-### Fugitive
-[fugitive](https://github.com/tpope/vim-fugitive) adds a bunch of useful git
-stuff to vim. I have mappings for the common stuff I use in [vimrc][].
-Use `g?` in a fugitive window (`Gstatus`, `Gblame`, etc.) to see what mappings
-you have available in that window. `o` and `O` are very handy for opening
-files, commits, etc. in a new split or tab; you can even use it on the `@@`
-lines when viewing a commit (with `:Glog --`) to vimdiff that commit in a new
-tab.
-
-- `:Gmerge` to resolve conflicts (even after a `git merge/pull/rebase`),
-  then `:cn/:cp` for next/previous conflict
-- in `Gstatus` window, `-` to stage or unstage files
-- in `Gblame` window, `P` to see more history (parent commits) for a line
-
 ### CtrlP
 [CtrlP](https://github.com/ctrlpvim/ctrlp.vim) is a fuzzy file finder.
 

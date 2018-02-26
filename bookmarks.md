@@ -1,30 +1,25 @@
-Articles worth reading
-----------------------
-- [Taco Bell Programming][] ([hn discussion](https://news.ycombinator.com/item?id=1818816))
-- [Git from the inside out][] ([hn discussion](https://news.ycombinator.com/item?id=9272249))
-- [How to receive a million packets][] ([hn discussion](https://news.ycombinator.com/item?id=9726185))
-- [Crash Bandicoot on 2MB of RAM][] ([hn discussion](https://news.ycombinator.com/item?id=9737156))
-- [When or when not to use React][] ([hn discussion](https://news.ycombinator.com/item?id=10068719))
-- <http://motherfuckingwebsite.com/> ([hn discussion](https://news.ycombinator.com/item?id=6791297))
+### Articles worth reading
+- [Taco Bell Programming](https://news.ycombinator.com/item?id=1818816)
+- [Git from the inside out](https://news.ycombinator.com/item?id=9272249)
+- [How to receive a million packets](https://news.ycombinator.com/item?id=9726185)
+- [Crash Bandicoot on 2MB of RAM](https://news.ycombinator.com/item?id=9737156)
+- [When or when not to use React](https://news.ycombinator.com/item?id=10068719)
+- [Motherfucking Website](https://news.ycombinator.com/item?id=6791297)
 
-Blogs
------
-- <http://techblog.netflix.com/>
-- This guy who reverse engineered SF II: <https://sf2platinum.wordpress.com/>
+### Blogs
+- [netflix techblog](http://techblog.netflix.com/)
+- [sf2platinum](https://sf2platinum.wordpress.com/)
 
-Learning
---------
+### Learning
 - Operating systems course videos <https://www.ops-class.org/>
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)
 - [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)
 
-Comics
-------
-- <http://xkcd.com/>
-- <http://turnoff.us/>
+### Comics
+- [xkcd](http://xkcd.com/)
+- [turnoff.us](http://turnoff.us/)
 
-Games
------
+### Games
 - [Minesweeper](http://minesweeperonline.com/#150-night)
 
 ### MtG
@@ -33,11 +28,6 @@ Games
 - <http://www.tcgplayer.com/> for buying
 - [this project][archive/mtg] for printing cards for a cube
 
-[Taco Bell Programming]: http://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html
-[Git from the inside out]: https://codewords.recurse.com/issues/two/git-from-the-inside-out
-[How to receive a million packets]: https://blog.cloudflare.com/how-to-receive-a-million-packets/
-[Crash Bandicoot on 2MB of RAM]: https://www.quora.com/How-did-game-developers-pack-entire-games-into-so-little-memory-twenty-five-years-ago/answer/Dave-Baggett
-[When or when not to use React]: http://blog.andrewray.me/reactjs-for-stupid-people/
 [Card Kingdom]: http://www.cardkingdom.com/catalog/magic_the_gathering/search
 [gatherer]: http://gatherer.wizards.com/Pages/Default.aspx
 [archive/mtg]: https://github.com/tylerbrazier/archive/tree/master/mtg

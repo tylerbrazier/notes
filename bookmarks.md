@@ -21,6 +21,7 @@
 - [Crash Bandicoot on 2MB of RAM](https://news.ycombinator.com/item?id=9737156)
 - [When or when not to use React](https://news.ycombinator.com/item?id=10068719)
 - [Motherfucking Website](https://news.ycombinator.com/item?id=6791297)
+- [[ -z $var ] works unreasonably well](https://news.ycombinator.com/item?id=14177701)
 
 ### games
 - [Minesweeper](http://minesweeperonline.com/#150-night)

@@ -1,3 +1,10 @@
+### Daily
+- [github](https://github.com/)
+- [google](https://www.google.com/)
+- [gmail](https://mail.google.com/)
+- [hacker news](https://news.ycombinator.com/)
+- [xkcd](https://xkcd.com/)
+
 ### Articles worth reading
 - [Taco Bell Programming](https://news.ycombinator.com/item?id=1818816)
 - [Git from the inside out](https://news.ycombinator.com/item?id=9272249)
@@ -14,10 +21,6 @@
 - Operating systems course videos <https://www.ops-class.org/>
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)
 - [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)
-
-### Comics
-- [xkcd](http://xkcd.com/)
-- [turnoff.us](http://turnoff.us/)
 
 ### Games
 - [Minesweeper](http://minesweeperonline.com/#150-night)

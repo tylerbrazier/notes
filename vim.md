@@ -15,8 +15,8 @@
 
 ## Notes
 - combo `d`, `c`, `y`, etc. with text objects (`:h text-objects`) e.g.:
-  - `daw` when cursor is on any character in a word to delete that whole word
-  - `ci)` is really useful to change the parameters of a function
+  - `daw` (delete around word) to delete a word the cursor is on
+  - `ci)` (change inner `)`) is really useful to change function parameters
   - the above can even be used when the cursor is before the parens on that line
 - `gd` and `*` to find definitions and usages of variables
 - `ctrl-o`/`ctrl-i` to jump back (out) and forward (in) from previous positions

@@ -27,11 +27,7 @@
 - [Minesweeper](http://minesweeperonline.com/#150-night)
 
 #### mtg
-- <http://tappedout.net/> for deck building
-- [Card Kingdom][] for card search (easier to use than [gatherer][])
-- <http://www.tcgplayer.com/> for buying
-- [this project][archive/mtg] for printing cards for a cube
-
-[Card Kingdom]: http://www.cardkingdom.com/catalog/magic_the_gathering/search
-[gatherer]: http://gatherer.wizards.com/Pages/Default.aspx
-[archive/mtg]: https://github.com/tylerbrazier/archive/tree/master/mtg
+- [tappedout](http://tappedout.net/) for deck building
+- [Card Kingdom](http://www.cardkingdom.com/catalog/magic_the_gathering/search) for search
+- [tcgplayer](http://www.tcgplayer.com/) for buying
+- [this project](https://github.com/tylerbrazier/archive/tree/master/mtg) for printing cards for a cube

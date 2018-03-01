@@ -10,10 +10,10 @@
 - [sf2platinum](https://sf2platinum.wordpress.com/)
 
 ### learning
-- Operating systems course videos <https://www.ops-class.org/>
+- [learn web development](https://developer.mozilla.org/en-US/docs/Learn)
+- [OS course videos](https://www.ops-class.org/)
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)
 - [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)
-- [learn web development](https://developer.mozilla.org/en-US/docs/Learn)
 
 ### articles
 - [Taco Bell Programming](https://news.ycombinator.com/item?id=1818816)

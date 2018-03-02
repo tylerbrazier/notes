@@ -5,6 +5,12 @@
 - [hacker news](https://news.ycombinator.com/)
 - [xkcd](https://xkcd.com/)
 
+### tools
+- [jsfiddle](https://jsfiddle.net/)
+- [AST explorer](https://astexplorer.net/)
+- [URL encoder/decoder](https://meyerweb.com/eric/tools/dencoder/)
+- [epoch converter](https://www.epochconverter.com/)
+
 ### blogs
 - [netflix techblog](http://techblog.netflix.com/)
 - [sf2platinum](https://sf2platinum.wordpress.com/)

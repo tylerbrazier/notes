@@ -8,6 +8,7 @@
 ### tools
 - [jsfiddle](https://jsfiddle.net/)
 - [AST explorer](https://astexplorer.net/)
+- [webassembly studio](https://webassembly.studio/)
 - [URL encoder/decoder](https://meyerweb.com/eric/tools/dencoder/)
 - [epoch converter](https://www.epochconverter.com/)
 

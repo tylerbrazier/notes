@@ -25,3 +25,10 @@
 - `:set spell!` to toggle
 - `]s` and `[s` jump to next and previous misspelled word
 - `z=` on a misspelled word for correction suggestions
+
+### Window management
+- `<c-w> s` split horizontally (:split)
+- `<c-w> v` split vertically (:vsplit)
+- `<c-w> o` close all other windows (:only)
+- `<c-w> h/j/k/l` move to window left/down/up/right
+- `<c-w> H/J/K/L` move window to the left/down/up/right

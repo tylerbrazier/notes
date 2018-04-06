@@ -20,6 +20,7 @@
   - the above can even be used when the cursor is before the parens on that line
 - `gd` and `*` to find definitions and usages of variables
 - `ctrl-o`/`ctrl-i` to jump back (out) and forward (in) from previous positions
+- `ctrl-z` to suspend vim; useful to git commit, etc. (then `fg` to foreground)
 
 ### Spell checking
 - `:set spell!` to toggle

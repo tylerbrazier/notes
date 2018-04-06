@@ -28,8 +28,8 @@
 - `z=` on a misspelled word for correction suggestions
 
 ### Window management
-- `<c-w> s` split horizontally (:split)
-- `<c-w> v` split vertically (:vsplit)
-- `<c-w> o` close all other windows (:only)
-- `<c-w> h/j/k/l` move to window left/down/up/right
-- `<c-w> H/J/K/L` move window to the left/down/up/right
+- `ctrl-w s` (or `:split`) split horizontally
+- `ctrl-w v` (or `:vsplit`) split vertically
+- `ctrl-w o` (or `:only`) close all other windows
+- `ctrl-w h/j/k/l` move to window left/down/up/right
+- `ctrl-w H/J/K/L` move window to the left/down/up/right

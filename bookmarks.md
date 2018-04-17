@@ -11,6 +11,7 @@
 - [webassembly studio](https://webassembly.studio/)
 - [URL encoder/decoder](https://meyerweb.com/eric/tools/dencoder/)
 - [epoch converter](https://www.epochconverter.com/)
+- [regexr](https://regexr.com/)
 
 ### blogs
 - [netflix techblog](http://techblog.netflix.com/)

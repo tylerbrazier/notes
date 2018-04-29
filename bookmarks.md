@@ -24,12 +24,10 @@
 - [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)
 
 ### articles
-- [The Lost Art of the Makefile](https://news.ycombinator.com/item?id=16483889)
 - [Taco Bell Programming](https://news.ycombinator.com/item?id=1818816)
 - [Git from the inside out](https://news.ycombinator.com/item?id=9272249)
 - [How to receive a million packets](https://news.ycombinator.com/item?id=9726185)
 - [Crash Bandicoot on 2MB of RAM](https://news.ycombinator.com/item?id=9737156)
-- [When or when not to use React](https://news.ycombinator.com/item?id=10068719)
 - [Motherfucking Website](https://news.ycombinator.com/item?id=6791297)
 - [[ -z $var ] works unreasonably well](https://news.ycombinator.com/item?id=14177701)
 

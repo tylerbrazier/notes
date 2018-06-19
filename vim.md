@@ -31,5 +31,6 @@
 - `ctrl-w s` (or `:split`) split horizontally
 - `ctrl-w v` (or `:vsplit`) split vertically
 - `ctrl-w o` (or `:only`) close all other windows
+- `ctrl-w T` move the current window to a new tab
 - `ctrl-w h/j/k/l` move to window left/down/up/right
 - `ctrl-w H/J/K/L` move window to the left/down/up/right

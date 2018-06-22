@@ -27,6 +27,14 @@
 - `]s` and `[s` jump to next and previous misspelled word
 - `z=` on a misspelled word for correction suggestions
 
+### Folding
+- `zc` close one level of fold under cursor
+- `zC` close all folds under cursor recursively
+- `zM` close all folds
+- `zo` open one level of fold under cursor
+- `zO` open all folds under cursor recursively
+- `zR` open all folds
+
 ### Window management
 - `ctrl-w s` (or `:split`) split horizontally
 - `ctrl-w v` (or `:vsplit`) split vertically

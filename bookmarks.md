@@ -15,6 +15,7 @@
 
 ### blogs
 - [netflix techblog](http://techblog.netflix.com/)
+- [v8 js engine blog](https://v8project.blogspot.com/)
 - [sf2platinum](https://sf2platinum.wordpress.com/)
 
 ### learning

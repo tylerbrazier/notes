@@ -2,7 +2,6 @@
 - [github](https://github.com/)
 - [google](https://www.google.com/)
 - [gmail](https://mail.google.com/)
-- [hacker news](https://news.ycombinator.com/)
 - [xkcd](https://xkcd.com/)
 
 ### tools
@@ -12,6 +11,10 @@
 - [URL encoder/decoder](https://meyerweb.com/eric/tools/dencoder/)
 - [epoch converter](https://www.epochconverter.com/)
 - [regexr](https://regexr.com/)
+
+### news
+- [github trending repos](https://github.com/trending)
+- [hacker news](https://news.ycombinator.com/)
 
 ### blogs
 - [netflix techblog](http://techblog.netflix.com/)

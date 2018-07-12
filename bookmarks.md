@@ -22,6 +22,7 @@
 - [sf2platinum](https://sf2platinum.wordpress.com/)
 
 ### learning
+- [project based learning](https://github.com/tuvtran/project-based-learning)
 - [learn web development](https://developer.mozilla.org/en-US/docs/Learn)
 - [OS course videos](https://www.ops-class.org/)
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)

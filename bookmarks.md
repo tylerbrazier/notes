@@ -24,6 +24,7 @@
 ### learning
 - [project based learning](https://github.com/tuvtran/project-based-learning)
 - [learn web development](https://developer.mozilla.org/en-US/docs/Learn)
+- [C boot camp](https://www.gribblelab.org/CBootCamp/)
 - [OS course videos](https://www.ops-class.org/)
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)
 - [Veritasium youtube channel](https://www.youtube.com/user/1veritasium)

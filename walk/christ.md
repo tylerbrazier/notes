@@ -13,6 +13,9 @@ other cheek ([Matthew 5:38-40][]). We only have to recognize his sacrifice
 love each other ([1 John 4:11][], [Matthew 5:48][]). 1 John 4 is a great
 reference on this one.
 
+(July 2018) It is also Jesus who is the final judge, not God himself; God has
+made him the judge ([John 5:21-23][], [Matthew 25:31-46][], [2 Timothy 4:1][],
+[John 14:6][]).
 
 [0]: http://ourrabbijesus.com/articles/what-does-the-word-christ-actually-mean/
 [1 John 4:10]: https://www.blueletterbible.org/nasb/1John/4/10
@@ -41,3 +44,9 @@ reference on this one.
   "(NET) 4:11 Dear friends, if God so loved us, then we also ought to love one another."
 [Matthew 5:48]: https://www.blueletterbible.org/nasb/Matthew/5/48
   "(NET) 5:48 So then, be perfect, as your heavenly Father is perfect."
+[John 5:21-23]: https://www.blueletterbible.org/nasb/jhn/5/21/
+  "(NET)  5:21  For just as the Father raises the dead and gives them life, so also the Son gives life to whomever he wishes.   22  Furthermore, the Father does not judge anyone, but has assigned all judgment to the Son,   23  so that all people will honor the Son just as they honor the Father. The one who does not honor the Son does not honor the Father who sent him."
+[Matthew 25:31-46]: https://www.blueletterbible.org/nasb/mat/25/31/
+  "(NET)  25:31   “When the Son of Man comes in his glory and all the angels with him, then he will sit on his glorious throne.   32  All the nations will be assembled before him, and he will separate people one from another like a shepherd separates the sheep from the goats.   33  He will put the sheep on his right and the goats on his left.   34  Then the king will say to those on his right, ‘Come, you who are blessed by my Father, inherit the kingdom prepared for you from the foundation of the world.   35  For I was hungry and you gave me food, I was thirsty and you gave me something to drink, I was a stranger and you invited me in,  36  I was naked and you gave me clothing, I was sick and you took care of me, I was in prison and you visited me.’   37  Then the righteous will answer him, ‘Lord, when did we see you hungry and feed you, or thirsty and give you something to drink?   38  When did we see you a stranger and invite you in, or naked and clothe you?   39  When did we see you sick or in prison and visit you?’   40  And the king will answer them, ‘I tell you the truth, just as you did it for one of the least of these brothers or sisters of mine, you did it for me.’   41   “Then he will say to those on his left, ‘Depart from me, you accursed, into the eternal fire that has been prepared for the devil and his angels!   42  For I was hungry and you gave me nothing to eat, I was thirsty and you gave me nothing to drink.   43  I was a stranger and you did not receive me as a guest, naked and you did not clothe me, sick and in prison and you did not visit me.’   44  Then they too will answer, ‘Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not give you whatever you needed?’   45  Then he will answer them, ‘I tell you the truth, just as you did not do it for one of the least of these, you did not do it for me.’   46  And these will depart into eternal punishment, but the righteous into eternal life.”"
+[2 Timothy 4:1]: https://www.blueletterbible.org/nasb/2ti/4/1/
+  "(NET)  4:1  I solemnly charge you before God and Christ Jesus, who is going to judge the living and the dead, and by his appearing and his kingdom:"

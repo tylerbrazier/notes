@@ -24,6 +24,7 @@
 ### learning
 - [project based learning](https://github.com/tuvtran/project-based-learning)
 - [learn web development](https://developer.mozilla.org/en-US/docs/Learn)
+- [K&R C Programming Language PDF](http://www.dipmat.univpm.it/~demeio/public/the_c_programming_language_2.pdf)
 - [C boot camp](https://www.gribblelab.org/CBootCamp/)
 - [OS course videos](https://www.ops-class.org/)
 - [Smarter every day youtube channel](https://www.youtube.com/user/destinws2)

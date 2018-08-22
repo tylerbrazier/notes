@@ -37,6 +37,7 @@
 - [Crash Bandicoot on 2MB of RAM](https://news.ycombinator.com/item?id=9737156)
 - [Motherfucking Website](https://news.ycombinator.com/item?id=6791297)
 - [[ -z $var ] works unreasonably well](https://news.ycombinator.com/item?id=14177701)
+- [The Lost Art of the Makefile](https://news.ycombinator.com/item?id=16483889)
 
 ### games
 - [Minesweeper](http://minesweeperonline.com/#150-night)

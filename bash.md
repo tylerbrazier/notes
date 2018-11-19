@@ -13,6 +13,6 @@ To include git info in the prompt, add something like the following to
     GIT_PS1_SHOWCOLORHINTS=1
     PROMPT_COMMAND='__git_ps1 "\w" " \\\$ "'
 
-For more info see <https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash>
+For more info read the `git-prompt.sh` script and <https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash>
 
 [Bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)

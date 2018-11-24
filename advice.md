@@ -27,3 +27,5 @@ ties you have to that person the easier it will be separate from them. Avoid
 talking with that person, delete all of your pictures together, get rid of
 their gifts to you, and stop following them on social media. The fewer
 reminders you have of that person, the easier it will be to move forward.
+
+Use your breaks *and* horn when avoiding deer on the road.

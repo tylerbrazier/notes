@@ -31,4 +31,10 @@ auto `ls` after `cd`:
 
     cd() { builtin cd "$@" && ls; }
 
+## Completion
+Press `Tab` to auto-complete commands and file names.
+Add this to your `~/.bashrc` to make completion case-insensitive:
+
+    bind 'set completion-ignore-case on'
+
 [Bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)

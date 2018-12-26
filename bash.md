@@ -38,4 +38,8 @@ Add this to your `~/.bashrc` to make completion case-insensitive:
 
     bind 'set completion-ignore-case on'
 
+## History
+Add this to `~/.bashrc` to ignore duplicate sequential entries in history:
+
+    HISTCONTROL=ignoredups
 [Bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)

@@ -42,3 +42,12 @@
 - `ctrl-w T` move the current window to a new tab
 - `ctrl-w h/j/k/l` move to window left/down/up/right
 - `ctrl-w H/J/K/L` move window to the left/down/up/right
+
+### Plugins
+Vim 8 added packages so a plugin manager isn't needed (`:help packages`).
+Just clone plugin repos into `~/.vim/pack/*/start/` like:
+
+    git clone https://github.com/tpope/vim-sensible ~/.vim/pack/x/start/vim-sensible
+
+Generating helptags for all plugins (`:helptags ALL`) may require running vim
+as root since it might generate tags in system directories.

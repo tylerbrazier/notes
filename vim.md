@@ -1,12 +1,17 @@
 # Vim
+Vim is a text editor.
+There's no need to get into [editor wars][]; find an editor you like and learn it to be productive.
+I like vim because of the following:
 
-## Why
 - Edit text very fast once you learn it
 - Doesn't need a GUI; can be used on servers and small computers (raspberry pi)
 - It's available on all major operating systems
 - Remember one set of keybindings; IDEs come and go but vi will never die
 - It's customizable and scriptable; all the features of any IDE via plugins
 - It's free and open source
+
+My college advisor said we must learn either emacs or vim to work with him on an intern project.
+I tried both and vim is still my all time favorite editor.
 
 ## Learning
 - `vimtutor` command

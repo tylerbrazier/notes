@@ -27,6 +27,10 @@ These are useful to add to `~/.bashrc`:
     alias rm='rm -r'
     alias mkdir='mkdir -p'
 
+    alias grep='grep --color=auto -I'
+    alias df='df -h'
+    alias du='du -h'
+
 Aliases can't take arguments so a function is needed for this -
 auto `ls` after `cd`:
 
@@ -42,4 +46,12 @@ Add this to your `~/.bashrc` to make completion case-insensitive:
 Add this to `~/.bashrc` to ignore duplicate sequential entries in history:
 
     HISTCONTROL=ignoredups
+
+By default, you can navigate history with `ctrl-p`/`ctrl-n` or up/down arrow.
+For filtered navigation with arrows, add the following to `~/.bashrc`;
+e.g. type `vi` then arrows to navigate commands starting with `vi`:
+
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+
 [Bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)

@@ -1,10 +1,24 @@
-[SSH][0] notes
-==============
+# SSH notes
 
-Remote Forwarding
------------------
+SSH is short for [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
+
+## Generating keys
+
+It's better to generate a keypair per machine rather than having one pair of
+keys for all of your devices because if one machine is compromised then that
+key can be revoked individually. It's also easier when setting up a computer
+to just generate a new pair of keys instead of fussing with copying files.
+
+    ssh-keygen -C "optional comment to help identify the key"
+
+Use `ssh-copy-id` to copy the public key to a remote server.
+
+[Arch wiki](https://wiki.archlinux.org/index.php/SSH_keys) has more info.
+
+## Remote Forwarding
+
 You can use SSH to connect to another computer sitting behind a NAT (e.g. your
-[raspberry pi][1] at home) by setting up a tunnel between the pi and your
+Raspberry Pi at home) by setting up a tunnel between the pi and your
 server. For this example, 'rpi' will be the machine we want to connect to.
 
     client ---- server ---- NAT -- rpi
@@ -39,7 +53,3 @@ default, ssh only allows localhost traffic from the server to be forwarded
 (for security). To enable forwarding external traffic to your server, set
 `GatewayPorts yes` in `/etc/ssh/sshd_config` and run `systemctl reload sshd`.
 Remember to adjust your iptables as needed.
-
-
-[0]: https://wiki.archlinux.org/index.php/Secure_Shell
-[1]: https://en.wikipedia.org/wiki/Raspberry_Pi

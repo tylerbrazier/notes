@@ -1,8 +1,4 @@
-# SSH notes
-
-SSH is short for [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
-
-## Generating keys
+# Generating keys
 
 It's better to generate a keypair per machine rather than having one pair of
 keys for all of your devices because if one machine is compromised then that
@@ -15,7 +11,7 @@ Use `ssh-copy-id` to copy the public key to a remote server.
 
 [Arch wiki](https://wiki.archlinux.org/index.php/SSH_keys) has more info.
 
-## Remote Forwarding
+# Remote Forwarding
 
 You can use SSH to connect to another computer sitting behind a NAT (e.g. your
 Raspberry Pi at home) by setting up a tunnel between the pi and your

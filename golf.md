@@ -1,8 +1,4 @@
-Golf
-====
-
-Driving
--------
+# Driving
 - left arm straight
 - imagine the club is a pendulum
 - to prevent slicing: tilt club head a little, focus on keeping wrists straight

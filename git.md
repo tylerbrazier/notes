@@ -1,5 +1,3 @@
-# git
-
 When resolving conflicts after pulling, sometimes it's useful to see what
 happened on the branch since the last time you pulled:
 

@@ -35,6 +35,8 @@ Some binding settings to add to `~/.config/openbox/lxde-rc.xml`:
         </action>
     </keybind>
 
+Reload settings with `openbox --reconfigure`.
+
 On my laptop with nvidia graphics card, xbacklight doesn't work so make a
 script `~/.brightness.sh` and make it executable.
 

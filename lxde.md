@@ -1,6 +1,6 @@
 Some binding settings to add to `~/.config/openbox/lxde-rc.xml`:
 
-    <keybind key='W-t'>
+    <keybind key='W-Return'>
         <action name='Execute'>
             <command>lxterminal</command>
         </action>

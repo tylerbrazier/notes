@@ -19,6 +19,7 @@ p  previous window
 
 %  split pane vertically
 "  split pane horizontally
+o  go to next (other) pane
 !  move pane to a new window
 x  kill pane
 

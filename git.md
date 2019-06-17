@@ -1,13 +1,13 @@
 Some useful command options:
 
-    git add -p			add changes interactively
-    git commit --amend		fix last commit
-    git checkout -b newbranch	create newbranch and check it out
-    git log -p			show changes (patch)
-    git stash list -p		show changes (patch)
-    git branch -avv		see all branches verbosely
-    git clean -d -x		directories (-d), and gitignored stuff (-x)
-    git rebase -i <commit>	rebase interactively on top of <commit>
+    git add -p                   add changes interactively
+    git commit --amend           fix last commit
+    git checkout -b newbranch    create newbranch and check it out
+    git log -p                   show changes (patch)
+    git stash list -p            show changes (patch)
+    git branch -avv              see all branches verbosely
+    git clean -d -x              directories (-d), and gitignored stuff (-x)
+    git rebase -i <commit>       rebase interactively on top of <commit>
 
 When resolving conflicts after pulling, sometimes it's useful to see what
 happened on the branch since the last time you pulled:

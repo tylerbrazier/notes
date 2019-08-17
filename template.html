@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 
-    <!--
-      mobile friendly
-      https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
-      https://developers.google.com/web/fundamentals/design-and-ux/responsive/
-    -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example</title>
 
-    <link rel="stylesheet" href="styles.css">
+<!--
+https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Example</title>
-  </head>
-  <body>
+<link rel="stylesheet" href="/example.css">
 
-    <!-- actual content goes here -->
-    <div>Example</div>
+<p>&lt;html&gt;, &lt;head&gt;, and &lt;body&gt; elements are optional.</p>
+<p>Validate html files <a href="https://validator.w3.org/">here</a>.</p>
 
-    <!--
-      scripts should go right before closing body element so any DOM
-      manipulations they do happen on elements that have already been loaded
-    -->
-    <script src="scripts/example.js"></script>
-  </body>
-</html>
+<!--
+Scripts should generally go last so that any DOM manipulations they do happen
+on elements that have already been loaded.
+-->
+<script src="example.js"></script>

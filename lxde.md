@@ -1,4 +1,21 @@
-Some binding settings to add to `~/.config/openbox/lxde-rc.xml`:
+Some packages to install (on Arch linux):
+
+- xorg-xinit xorg-server
+- lxde
+- ttf-dejavu
+- chromium
+- networkmanager network-manager-applet nm-connection-editor
+- arc-gtk-theme
+- acpilight (for Dell laptop; includes `xbacklight`)
+
+For theme:
+
+- Menu, Preferences, Customize Look and Feel: under Widget choose Arc-Darker, and under Window Border choose Arc-Darker
+- right click panel, "Panel Settings", Appearance tab, Solid color
+- on the panel, right click to the right of windows, choose "Task Bar (Window List) Settings", check "Flat buttons"
+
+Some binding settings to add to `~/.config/openbox/lxde-rc.xml`
+in the `<keyboard>` section:
 
     <keybind key='W-Return'>
         <action name='Execute'>
@@ -37,30 +54,16 @@ Some binding settings to add to `~/.config/openbox/lxde-rc.xml`:
 
 Reload settings with `openbox --reconfigure`.
 
-On my laptop with nvidia graphics card, xbacklight doesn't work so make a
-script `~/.brightness.sh` and make it executable.
-
-    f=/sys/class/backlight/nv_backlight/brightness
-    c=$(cat $f)
-    if [ "$1" == '+' ]; then
-        n=$((c + 10))
-    elif [ "$1" == '-' ]; then
-        n=$((c - 10))
-    else
-        n=$c
-    fi
-    echo $n | sudo tee $f
-
-Then also add these keybindings to `~/.config/openbox/lxde-rc.xml`:
+To adjust brightness settings with `xbacklight` for example:
 
     <keybind key='XF86MonBrightnessUp'>
         <action name='Execute'>
-            <command>~/.brightness.sh +</command>
+            <command>sudo xbacklight -inc 10</command>
         </action>
     </keybind>
     <keybind key='XF86MonBrightnessDown'>
         <action name='Execute'>
-            <command>~/.brightness.sh -</command>
+            <command>sudo xbacklight -dec 10</command>
         </action>
     </keybind>
 

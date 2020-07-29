@@ -6,18 +6,22 @@
 ## Parameter expansion
 <https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html>
 
-% deletes from the end, # deletes from the beginning:
+`%` deletes from the end, `#` deletes from the beginning:
 
 	s='abc,def'
 	${s%,*} -> abc
 	${s#,*} -> def
 
 
-two %%/## strips the longest matching pattern
+two `%%/##` strips the longest matching pattern:
 
 	s='abc,def,hij'
 	${s%%,*} -> abc
 	${s##*,} -> hij
+
+`:-` to use a default value:
+
+	editor="${1:-vi}" # prefer param 1 but default to vi
 
 ## Option/argument parsing
 

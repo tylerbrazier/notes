@@ -25,6 +25,21 @@ Commands and arguments can often be completed with `Tab`
 - garbage collect stopped containers: `docker container prune` (docker doesn't automatically remove containers when they stop)
 - see a container's logs: `docker logs <name>`
 
+## .dockerignore
+This usually includes things like:
+
+	README.md
+	node_modules
+	tests
+	*.log
+	.env
+	.eslintrc.js
+	.editorconfig
+	.git
+	.gitignore
+
+<https://docs.docker.com/engine/reference/builder/#dockerignore-file>
+
 ## Troubleshooting
 To fix network issues, I've had to use `--network host` on `build` and `run`.
 When doing this for `run`, I had to use something like `-e PORT=80` to set the port in the container instead of doing `-p 80:80`;

@@ -8,6 +8,8 @@ Commands and arguments can often be completed with `Tab`
 - list images: `docker image ls`. include `-a` to show intermediate images
 - remove an image: `docker image rm <repo:tag>`
 
+<https://docs.docker.com/engine/reference/commandline/build/>
+
 ## Containers
 - a container is a running instance of an image
 - see running containers: `docker container ls`. include `-a` to see stopped ones too
@@ -24,6 +26,8 @@ Commands and arguments can often be completed with `Tab`
 - stop running container: `docker container stop <name>`
 - garbage collect stopped containers: `docker container prune` (docker doesn't automatically remove containers when they stop)
 - see a container's logs: `docker logs <name>`
+
+<https://docs.docker.com/engine/reference/run/>
 
 ## .dockerignore
 This usually includes things like:

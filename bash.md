@@ -16,7 +16,8 @@ two `%%/##` strips the longest matching pattern:
 
 `:-` to use a default value:
 
-	editor="${1:-vi}" # prefer param 1 but default to vi
+	port="${1:-80}"         # prefer positional param 1 but default to 80
+	EDITOR="${EDITOR:-vi}"  # default editor to vi
 
 ## Option/argument parsing
 

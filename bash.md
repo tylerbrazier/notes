@@ -1,3 +1,6 @@
+# Bash notes
+A good place for learning/reference: <https://mywiki.wooledge.org/>
+
 ## Parameter expansion
 <https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html>
 

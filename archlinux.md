@@ -10,12 +10,13 @@ Copy the ISO to a usb drive (`cat` works, but must be `root`).
 See <https://wiki.archlinux.org/index.php/USB_flash_installation_medium>.
 
 Follow the [Installation guide](https://wiki.archlinux.org/index.php/Installation_guide).
-See Packages below for a list to `pacstrap`.
+See **Packages** below for a list to `pacstrap`.
 
 ## Packages
 	bash-completion
 	vim
 	tmux
+	iwd  #for wifi
 	man-db
 	man-pages
 	grub
@@ -24,3 +25,22 @@ See Packages below for a list to `pacstrap`.
 	intel-ucode
 	sudo
 	git
+
+## Network
+<https://wiki.archlinux.org/index.php/Network_configuration>
+
+For wireless, [iwd](https://wiki.archlinux.org/index.php/Iwd) is good.
+Edit `/etc/iwd/main.conf` and add:
+
+	[General]
+	# let iwd handle getting an IP address
+	EnableNetworkConfiguration=true
+
+	[Network]
+	# use systemd-resolvd for DNS:
+	NameResolvingService=systemd
+
+Then:
+
+	systemctl start/enable iwd.service
+	systemctl start/enable systemd-resolvd.service

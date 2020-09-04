@@ -26,6 +26,14 @@ See **Packages** below for a list to `pacstrap`.
 	sudo
 	git
 
+### Post-installation
+	useradd -m -G wheel -s /bin/bash tyler
+	passwd tyler
+
+	EDITOR=vim visudo
+	# uncomment this line to allow wheel group to sudo w/out a password:
+	%wheel ALL=(ALL) NOPASSWD: ALL
+
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>
 

@@ -26,6 +26,7 @@ See **Packages** below for a list to `pacstrap`.
 	sudo
 	git
 	openssh
+	htop
 
 ### Post-installation
 	useradd -m -G wheel -s /bin/bash tyler

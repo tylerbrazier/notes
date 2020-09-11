@@ -38,6 +38,9 @@ See **Packages** below for a list to `pacstrap`.
 
 	ssh-keygen
 
+**TODO** swap and hiberate setup:
+<https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate>
+
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>
 

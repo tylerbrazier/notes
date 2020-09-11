@@ -16,12 +16,12 @@ See **Packages** below for a list to `pacstrap`.
 	bash-completion
 	vim
 	tmux
-	iwd  #for wifi
+	iwd         # for wifi
 	man-db
 	man-pages
 	grub
-	efibootmgr  #https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
-	os-prober   #for dual-booting
+	efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
+	os-prober   # for dual-booting
 	intel-ucode
 	sudo
 	git

@@ -25,6 +25,7 @@ See **Packages** below for a list to `pacstrap`.
 	intel-ucode
 	sudo
 	git
+	openssh
 
 ### Post-installation
 	useradd -m -G wheel -s /bin/bash tyler
@@ -33,6 +34,8 @@ See **Packages** below for a list to `pacstrap`.
 	EDITOR=vim visudo
 	# uncomment this line to allow wheel group to sudo w/out a password:
 	%wheel ALL=(ALL) NOPASSWD: ALL
+
+	ssh-keygen
 
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>

@@ -72,6 +72,8 @@ Install:
 	brightnessctl         # for adjusting screen brightness
 	xorg-server-xwayland  # needed to run X11 programs
 	firefox               # and/or chromium
+	gvim                  # includes clipboard support
+	alsa-utils            # sound control from userspace
 
 Copy the default configuration:
 
@@ -90,9 +92,11 @@ Things to add to the sway config:
 	# run `swaymsg -t get_outputs` to find the monitor's <name>
 	output <name> scale 1.2
 
-	bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
-	bindsym XF86MonBrightnessUp exec brightnessctl set 10%+
-	# TODO volume and play/pause/next buttons
+	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+	bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+	bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+	bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+	bindsym XF86AudioMute exec amixer set Master toggle
 
 	bar {
 	    ...
@@ -100,4 +104,10 @@ Things to add to the sway config:
 	    ...
 	}
 
-Edit i3status config however. **TODO** volume status
+Add this to `~/.config/i3status/config` for showing volume status
+(remember to add `order += "volume master"`):
+
+	volume master {
+		format = "♪: %volume"
+		format_muted = "♪: muted (%volume)"
+	}

@@ -104,6 +104,8 @@ Things to add to the sway config:
 	    ...
 	}
 
+**TODO** get the screen to turn off when inactive (`swayidle`?)
+
 Add this to `~/.config/i3status/config` for showing volume status
 (remember to add `order += "volume master"`):
 

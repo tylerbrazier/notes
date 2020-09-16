@@ -69,6 +69,7 @@ Install:
 	alacritty
 	dmenu
 	i3status
+	swayidle
 	brightnessctl         # for adjusting screen brightness
 	xorg-server-xwayland  # needed to run X11 programs
 	firefox               # and/or chromium
@@ -94,6 +95,11 @@ Things to add to the sway config:
 	# or use * for all.
 	output <name> scale 1.2
 
+	# Turn off screens after 300s (5m) of inactivity.
+	exec swayidle \
+		timeout 300 'swaymsg "output * dpms off"' \
+		resume 'swaymsg "output * dpms on"'
+
 	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 	bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 	bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
@@ -105,8 +111,6 @@ Things to add to the sway config:
 	    status_command i3status
 	    ...
 	}
-
-**TODO** get the screen to turn off when inactive (`swayidle`?)
 
 Add this to `~/.config/i3status/config` for showing volume status
 (remember to add `order += "volume master"`):

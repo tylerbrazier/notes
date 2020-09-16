@@ -85,11 +85,13 @@ Copy the default configuration:
 
 Things to add to the sway config:
 
-	# run `swaymsg -t get_inputs` to find the keyboard's <identifier>
+	# Run `swaymsg -t get_inputs` to find the keyboard's <identifier>
+	# or use * for all.
 	input <identifier> repeat_delay 200
 
-	# for HiDPI displays
-	# run `swaymsg -t get_outputs` to find the monitor's <name>
+	# For HiDPI displays.
+	# Run `swaymsg -t get_outputs` to find the monitor's <name>
+	# or use * for all.
 	output <name> scale 1.2
 
 	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-

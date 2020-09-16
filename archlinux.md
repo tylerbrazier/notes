@@ -36,6 +36,7 @@ See **Packages** below for a list to `pacstrap`.
 	# uncomment this line to allow wheel group to sudo w/out a password:
 	%wheel ALL=(ALL) NOPASSWD: ALL
 
+	# as your new user:
 	ssh-keygen
 
 **TODO** swap and hiberate setup:

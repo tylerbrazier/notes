@@ -86,6 +86,9 @@ Copy the default configuration:
 
 Things to add to the sway config:
 
+	# Tabbed layout by default.
+	workspace_layout tabbed
+
 	# Run `swaymsg -t get_inputs` to find the keyboard's <identifier>
 	# or use * for all.
 	input <identifier> repeat_delay 200

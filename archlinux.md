@@ -12,23 +12,7 @@ See <https://wiki.archlinux.org/index.php/USB_flash_installation_medium>.
 Follow the [Installation guide](https://wiki.archlinux.org/index.php/Installation_guide).
 See **Packages** below for a list to `pacstrap`.
 
-## Packages
-	bash-completion
-	vim
-	tmux
-	iwd         # for wifi
-	man-db
-	man-pages
-	grub
-	efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
-	os-prober   # for dual-booting
-	intel-ucode
-	sudo
-	git
-	openssh
-	htop
-
-### Post-installation
+## Post-installation
 	useradd -m -G wheel -s /bin/bash tyler
 	passwd tyler
 
@@ -51,6 +35,22 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 - Add the `resume` hook to `/etc/mkinitcpio.conf` (see <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Configure_the_initramfs>)
 - Regenerate the initramfs with `mkinitcpio -P`
 - Reboot (or edit `/sys/power/resume` according to the instructions on the wiki)
+
+## Packages
+	bash-completion
+	vim
+	tmux
+	iwd         # for wifi
+	man-db
+	man-pages
+	grub
+	efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
+	os-prober   # for dual-booting
+	intel-ucode
+	sudo
+	git
+	openssh
+	htop
 
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>

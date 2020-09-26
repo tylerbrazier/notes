@@ -39,8 +39,18 @@ See **Packages** below for a list to `pacstrap`.
 	# as your new user:
 	ssh-keygen
 
-**TODO** swap and hiberate setup:
-<https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate>
+To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
+
+- Set up a swap file: <https://wiki.archlinux.org/index.php/swap#Swap_file>
+- Get the UUID of the disk with the `/swapfile` using `lsblk -f` or `blkid`.
+- Edit `/etc/default/grub` and append the kernel param `resume=UUID=<id>` to `GRUB_CMDLINE_LINUX_DEFAULT`
+- Run `filefrag -v /swapfile` and copy the first value (without trailing periods) under `physical_offset` from the first row
+- Edit `/etc/default/grub` and append the kernel param `resume_offset=<offset>` to `GRUB_CMDLINE_LINUX_DEFAULT`
+- Regenerate grub config: `grub-mkconfig -o /boot/grub/grub.cfg`
+- Consider reducing swappiness if you have plenty of RAM: <https://wiki.archlinux.org/index.php/Swap#Swappiness>
+- Add the `resume` hook to `/etc/mkinitcpio.conf` (see <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Configure_the_initramfs>)
+- Regenerate the initramfs with `mkinitcpio -P`
+- Reboot (or edit `/sys/power/resume` according to the instructions on the wiki)
 
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>

@@ -55,21 +55,38 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>
 
+### Wireless
 For wireless, [iwd](https://wiki.archlinux.org/index.php/Iwd) is good.
 Edit `/etc/iwd/main.conf` and add:
 
 	[General]
-	# let iwd handle getting an IP address
+	# let iwd handle getting an IP address (DHCP)
 	EnableNetworkConfiguration=true
 
 	[Network]
-	# use systemd-resolvd for DNS:
+	# use systemd-resolved for DNS:
 	NameResolvingService=systemd
 
 Then:
 
 	systemctl start/enable iwd.service
-	systemctl start/enable systemd-resolvd.service
+	systemctl start/enable systemd-resolved.service
+
+### Wired
+[systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd)
+can handle getting an IP address (DHCP);
+create a file `/etc/systemd/network/20-wired.network` with:
+
+	[Match]
+	Name=en*
+
+	[Network]
+	DHCP=yes
+
+Then:
+
+	systemctl start/enable systemd-networkd.service
+	systemctl start/enable systemd-resolved.service
 
 ## GUI (sway)
 Install:

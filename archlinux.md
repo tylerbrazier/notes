@@ -112,7 +112,7 @@ Copy the default configuration:
 	mkdir ~/.config/i3status
 	cp /etc/i3status.conf ~/.config/i3status/config
 
-Things to add to the sway config:
+Things to add to the sway config (`man 5 sway`):
 
 	# Tabbed layout by default.
 	workspace_layout tabbed
@@ -137,10 +137,20 @@ Things to add to the sway config:
 	bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 	bindsym XF86AudioMute exec amixer set Master toggle
 
+	# for aesthetics, arch linux blue looks cool
+	client.focused #1793d1 #1793d1 #ffffff
+	hide_edge_borders both
+
+	# man 5 sway-bar
 	bar {
-	    ...
-	    status_command i3status
-	    ...
+		...
+		status_command i3status
+
+		# for aesthetics, arch linux blue looks cool
+		colors {
+			focused_workspace #1793d1 #1793d1 #ffffff
+		}
+		...
 	}
 
 Add this to `~/.config/i3status/config` for showing volume status

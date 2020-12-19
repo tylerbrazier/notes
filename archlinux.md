@@ -117,14 +117,11 @@ Things to add to the sway config (`man 5 sway`):
 	# Tabbed layout by default.
 	workspace_layout tabbed
 
-	# Run `swaymsg -t get_inputs` to find the keyboard's <identifier>
-	# or use * for all.
-	input <identifier> repeat_delay 200
+	# Faster keyboard repeat delay
+	input * repeat_delay 200
 
-	# For HiDPI displays.
-	# Run `swaymsg -t get_outputs` to find the monitor's <name>
-	# or use * for all.
-	output <name> scale 1.2
+	# For HiDPI displays (tho fractional scaling looks blurry)
+	output * scale 1.2
 
 	# Turn off screens after 300s (5m) of inactivity.
 	exec swayidle \

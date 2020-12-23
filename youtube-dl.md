@@ -1,14 +1,12 @@
 Download audio and videos from youtube.
-<http://yt-dl.org/>
+<https://youtube-dl.org/>
 
-**NOTE** since youtube-dl has been taken down, instead use
-[youtube-dlc](https://github.com/blackjack4494/yt-dlc).
-Use `pip` to install and update.
+([youtube-dlc](https://github.com/blackjack4494/yt-dlc) is an alternative.)
 
 Useful `~/.bashrc` aliases:
 
-	alias yd='youtube-dlc --restrict-filenames -o "%(title)s.%(ext)s"'
-	alias ydp='youtube-dlc --restrict-filenames -o "%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s"'
+	alias yd='youtube-dl --restrict-filenames -o "%(title)s.%(ext)s"'
+	alias ydp='youtube-dl --restrict-filenames -o "%(playlist)s/%(playlist_index)s-%(title)s.%(ext)s"'
 
 Common options:
 
@@ -18,4 +16,4 @@ Common options:
 	--playlist-items  (choose specific videos from playlist)
 	--ignore-errors   (to skip unavailable videos)
 
-All options: <https://github.com/blackjack4494/yt-dlc#options>
+All options: <https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options>

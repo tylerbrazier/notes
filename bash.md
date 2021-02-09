@@ -12,7 +12,7 @@ A good place for learning/reference: <https://mywiki.wooledge.org/>
 
 	s='abc,def'
 	${s%,*} -> abc
-	${s#,*} -> def
+	${s#*,} -> def
 
 
 two `%%/##` strips the longest matching pattern:

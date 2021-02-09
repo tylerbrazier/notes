@@ -1,6 +1,10 @@
 # Bash notes
 A good place for learning/reference: <https://mywiki.wooledge.org/>
 
+## Builtin Commands
+`read -s -p 'Password: ' var` will prompt for password, storing it in `var`.
+`-s` (silent) will hide input.
+
 ## Parameter expansion
 <https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html>
 

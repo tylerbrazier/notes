@@ -3,7 +3,7 @@ A good place for learning/reference: <https://mywiki.wooledge.org/>
 
 ## Builtin Commands
 `read -s -p 'Password: ' var` will prompt for password, storing it in `var`.
-`-s` (silent) will hide input.
+`-s` (silent) will hide input. `-n 1` would read only one typed character.
 
 ## Parameter expansion
 <https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html>
@@ -69,3 +69,18 @@ two `%%/##` strips the longest matching pattern:
 	echo "a: $a"
 	echo "b: $b"
 	echo "params: ${params[@]}"
+
+## Prompts/Reading input
+
+	ask() {
+		local readopts="$1"
+		local default="$2"
+		local answer=
+		while [ -z "$answer" ]; do
+			eval "read $readopts answer"
+			answer="${answer:-$default}"
+		done
+		echo "$answer"
+	}
+
+	result=$(ask "-n 1 -p 'Will you follow me? [Y/n] '" "y")

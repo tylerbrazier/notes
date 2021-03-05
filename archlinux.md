@@ -185,3 +185,8 @@ Things to add to the sway config (`man 5 sway`):
 	    background: '#000000'
 	    foreground: '#ffffff'
 	background_opacity: 0.7
+
+In firefox, change a couple of settings by going to `about:config`:
+
+- disable `browser.chrome.toolbar_tips` because tooltips don't go away when switching windows
+- disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt

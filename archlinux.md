@@ -88,6 +88,26 @@ Then:
 	systemctl start/enable systemd-networkd.service
 	systemctl start/enable systemd-resolved.service
 
+## Power management
+To prevent keyboard/mouse from waking the machine from suspend
+(see <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend>):
+
+	# check enabled devices:
+	cat /proc/acpi/wakeup
+
+	# toggle enabled/disabled by echoing the device name to the file:
+	echo USBE > /proc/acpi/wakeup
+	echo USE2 > /proc/acpi/wakeup
+
+	# to persist across reboots:
+	# (the device names need to be joined together all on one line)
+	vim /etc/tmpfiles.d/100-disable-device-wakeup.conf
+		#	Path			Mode	UID	GID	Age	Argument
+		w	/proc/acpi/wakeup	-	-	-	-	USBEUSE2
+
+I wasn't able to keep the keyboard enabled but the mouse disabled
+so I just disabled everything and use the power button to wake from sleep.
+
 ## GUI (sway)
 Install:
 

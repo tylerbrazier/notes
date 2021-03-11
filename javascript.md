@@ -46,3 +46,29 @@ async function retry(attempts, backoff, fn, ...args) {
 	}
 }
 ```
+
+For mocking modules in tests for node.js:
+```javascript
+const path = require('path')
+const Module = require('module')
+const originalRequire = Module.prototype.require
+
+// This module redefines how require() works so that we can mock modules for tests.
+// At the top of your test file you can put something like:
+//
+//     require('.../proxyRequire.js')({
+//       'node-fetch': function mockFetch(...) { ... },
+//       'someOtherModuleToMock.js': { mockExportedProp1: ..., mockExportedProp2: ... }
+//       ...
+//     })
+//     const moduleToBeTested = require('.../moduleToBeTested.js')
+//
+// Then when moduleToBeTested.js requires 'node-fetch' or '.../someOtherModuleToMock.js'
+// they will be replaced by your mocks instead.
+module.exports = function makeProxyRequire(moduleMap) {
+  Module.prototype.require = function proxyRequire(mod) {
+    // need to use path.basename() to convert e.g. '.../something.js' --> 'something.js'
+    return moduleMap[path.basename(mod)] || originalRequire.call(this, mod)
+  }
+}
+```

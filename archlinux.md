@@ -139,8 +139,8 @@ Things to add to the sway config (`man 5 sway`):
 
 	set $menu wofi --gtk-dark --show run
 
-	set $focus_color '#0088ff'
-	set $text_color '#ffffff'
+	set $focus_color #0080ff
+	set $text_color  #ffffff
 
 	input * repeat_delay 200
 	input * xkb_numlock enabled
@@ -154,9 +154,10 @@ Things to add to the sway config (`man 5 sway`):
 	bindsym $mod+Tab workspace back_and_forth
 
 	client.focused $focus_color $focus_color $text_color
-	default_border pixel 2  # hide window title bars
-	gaps outer 8  # between screen edges
-	gaps inner 8  # between windows
+	default_border pixel 2	# hide window title bars
+	#gaps outer 8		# between screen edges
+	#gaps inner 8		# between windows
+	hide_edge_borders smart	# if not using gaps
 
 	# turn off screens after 600s (10m) of inactivity.
 	exec swayidle \

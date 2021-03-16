@@ -174,9 +174,9 @@ Things to add to the sway config (`man 5 sway`):
 
 		position top
 
-		# if you to only show the bar while $mod is held
-		mode hide
-		modifier $mod
+		# to only show the bar while $mod is held:
+		#mode hide
+		#modifier $mod
 
 		colors {
 			focused_workspace $focus_color $focus_color $text_color

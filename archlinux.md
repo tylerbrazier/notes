@@ -201,6 +201,7 @@ Things to add to the sway config (`man 5 sway`):
 
 `~/.config/alacritty.yml`:
 
+	# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 	colors:
 	  primary:
 	    background: '#000000'

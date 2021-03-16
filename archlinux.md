@@ -20,8 +20,9 @@ See **Packages** below for a list to `pacstrap`.
 	# uncomment this line to allow wheel group to sudo w/out a password:
 	%wheel ALL=(ALL) NOPASSWD: ALL
 
-	# as your new user:
+	# as the new user:
 	ssh-keygen
+	curl -L http://tylerbrazier.com/dotfiles/install.sh | bash
 
 To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
 

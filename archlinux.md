@@ -152,8 +152,6 @@ Things to add to the sway config (`man 5 sway`):
 	bindsym XF86AudioLowerVolume exec amixer set Master 5%- && pkill -USR1 i3status
 	bindsym XF86AudioMute exec amixer set Master toggle && pkill -USR1 i3status
 
-	bindsym $mod+Tab workspace back_and_forth
-
 	client.focused $focus_color $focus_color $text_color
 	default_border pixel 2	# hide window title bars
 	#gaps outer 8		# between screen edges

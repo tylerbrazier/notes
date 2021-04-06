@@ -212,8 +212,3 @@ In firefox, change a couple of settings by going to `about:config`:
 - disable `browser.chrome.toolbar_tips` because tooltips don't go away when switching windows
 - disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt
 - disable `browser.fullscreen.autohide` to prevent the top from disappearing on fullscreen
-
-To have the title bars of terminal windows show the current working directory,
-set `PROMPT_COMMAND='echo -ne "\033]0;${PWD/$HOME/\~}\007"'` in `~/.bashrc`
-(also `set notitle` in `~/.vimrc` if you don't like the way vim sets the title).
-See <https://wiki.archlinux.org/index.php/Alacritty#%22user@host:cwd%22_in_Window_Title_Bar>.

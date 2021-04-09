@@ -205,7 +205,7 @@ Things to add to the sway config (`man 5 sway`):
 	  primary:
 	    background: '#000000'
 	    foreground: '#ffffff'
-	background_opacity: 0.7
+	background_opacity: 0.8
 
 In firefox, change a couple of settings by going to `about:config`:
 

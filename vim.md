@@ -19,3 +19,7 @@ e.g. `:term git log -p %` to see the history of the current file.
 `n` to jump to the next occurrence.
 `N` to jump to the previous occurrence.
 Turn on `hlsearch` to highlight the occurrences.
+
+`g;` to jump back to where text was last changed.
+Repeat `g;g;g;`... to keep jumping back to older change locations.
+(`:help changelist` for more info.)

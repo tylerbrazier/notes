@@ -26,6 +26,8 @@ x  kill pane
 $  rename session
 d  detach session
 
+[  copy mode (for moving around in history)
+
 :  prompt to enter tmux command (e.g. new or ls)
 ?  list bindings
 ```

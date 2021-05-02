@@ -116,7 +116,7 @@ Install:
 	mesa        # intel video drivers
 	ttf-dejavu  # needs a font
 	alacritty
-	wofi
+	dmenu
 	i3status
 	swayidle
 	brightnessctl         # for adjusting screen brightness
@@ -125,87 +125,9 @@ Install:
 	gvim                  # includes clipboard support
 	alsa-utils            # sound control from userspace
 
-Copy the default configuration:
+Configuration files:
 
-	mkdir -p ~/.config/sway
-	cp /etc/sway/config ~/.config/sway/config
-
-	mkdir -p ~/.config/i3status
-	cp /etc/i3status.conf ~/.config/i3status/config
-
-Things to add to the sway config (`man 5 sway`):
-
-	# alt is easier to press than the logo key
-	set $mod Mod1
-
-	set $menu wofi --gtk-dark --show run
-
-	set $focus_color #0080ff
-	set $text_color  #ffffff
-
-	input * repeat_delay 200
-	input * xkb_numlock enabled
-
-	bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
-	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-	bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ && pkill -USR1 i3status
-	bindsym XF86AudioLowerVolume exec amixer set Master 5%- && pkill -USR1 i3status
-	bindsym XF86AudioMute exec amixer set Master toggle && pkill -USR1 i3status
-
-	client.focused $focus_color $focus_color $text_color
-	default_border pixel 2	# hide window title bars
-	#gaps outer 8		# between screen edges
-	#gaps inner 8		# between windows
-	hide_edge_borders smart	# if not using gaps
-
-	# turn off screens after 600s (10m) of inactivity.
-	exec swayidle \
-		timeout 600 'swaymsg "output * dpms off"' \
-		resume 'swaymsg "output * dpms on"'
-
-	# don't idle if the focused window is fullscreen
-	for_window [class=".*"] inhibit_idle fullscreen
-	for_window [app_id=".*"] inhibit_idle fullscreen
-
-	# man 5 sway-bar
-	bar {
-		status_command i3status
-
-		position top
-
-		# to only show the bar while $mod is held:
-		#mode hide
-		#modifier $mod
-
-		colors {
-			focused_workspace $focus_color $focus_color $text_color
-		}
-	}
-
-`~/.config/i3status/config`:
-
-	order += "volume master"
-
-	...
-
-	volume master {
-		format = "♪: %volume"
-		format_muted = "♪: muted (%volume)"
-	}
-
-	tztime local {
-		# man 1 date
-		format = "%Y-%m-%d %I:%M"
-	}
-
-`~/.config/alacritty.yml`:
-
-	# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
-	colors:
-	  primary:
-	    background: '#000000'
-	    foreground: '#ffffff'
-	background_opacity: 0.8
+	curl -L http://tylerbrazier.com/de/install.sh | bash
 
 In firefox, change a couple of settings by going to `about:config`:
 

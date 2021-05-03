@@ -11,8 +11,8 @@ function waterfall (promises, initialValue) {
   return promises.reduce((acc, p) => acc.then(p), Promise.resolve(initialValue))
 }
 
-async function wait(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms))
+async function wait(ms, ...args) {
+	return new Promise(resolve => setTimeout(resolve, ms, ...args))
 }
 
 /**

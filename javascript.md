@@ -7,6 +7,11 @@
 Destructure renaming: `const { old_name: newName } = obj`
 
 ```javascript
+(function() {
+	// Immediately Invoked Function Expression (IIFE)
+	// can be async if top level await isn't available
+})();
+
 function waterfall (promises, initialValue) {
   return promises.reduce((acc, p) => acc.then(p), Promise.resolve(initialValue))
 }

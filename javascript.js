@@ -20,6 +20,22 @@ function waterfall (promises, initialValue) {
 }
 
 
+// Memoize a function.
+// Cache keys are determined by json stringifying the args to the function,
+// so be careful and consider what kinds of inputs will result in which keys;
+// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#description
+// Compare with lodash's implementation : https://lodash.com/docs/#memoize
+function memoize(fn) {
+	var memoized = function() {
+		var key = JSON.stringify(arguments);
+		if (key in memoized.cache) return memoized.cache[key];
+		else return memoized.cache[key] = fn.apply(this, arguments);
+	};
+	memoized.cache = {};
+	return memoized;
+}
+
+
 /**
  * Attempt calling fn, retrying on failure and backing off between retries.
  * @param {number} attempts - How many attempts to make.

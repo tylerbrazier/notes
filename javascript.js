@@ -1,24 +1,24 @@
-# javascript notes
+// javascript notes
 
-`for...in` interates **indexes** in arrays, **keys** in object
+//
+// for...in iterates over INDEXES in arrays, KEYS in object
+// for...of iterates over VALUES in arrays, CHARS in strings
+//
 
-`for...of` iterates **values** in arrays, **chars** in strings
+// Destructure renaming:
+const { old_name: newName } = obj;
 
-Destructure renaming: `const { old_name: newName } = obj`
 
-```javascript
 (function() {
 	// Immediately Invoked Function Expression (IIFE)
 	// can be async if top level await isn't available
 })();
 
+
 function waterfall (promises, initialValue) {
-  return promises.reduce((acc, p) => acc.then(p), Promise.resolve(initialValue))
+	return promises.reduce((acc, p) => acc.then(p), Promise.resolve(initialValue));
 }
 
-async function wait(ms, ...args) {
-	return new Promise(resolve => setTimeout(resolve, ms, ...args))
-}
 
 /**
  * Attempt calling fn, retrying on failure and backing off between retries.
@@ -50,13 +50,9 @@ async function retry(attempts, backoff, fn, ...args) {
 		}
 	}
 }
-```
-
-For mocking modules in tests for node.js:
-```javascript
-const path = require('path')
-const Module = require('module')
-const originalRequire = Module.prototype.require
+async function wait(ms, ...args) {
+	return new Promise(resolve => setTimeout(resolve, ms, ...args))
+}
 
 // This module redefines how require() works so that we can mock modules for tests.
 // At the top of your test file you can put something like:
@@ -70,10 +66,12 @@ const originalRequire = Module.prototype.require
 //
 // Then when moduleToBeTested.js requires 'node-fetch' or '.../someOtherModuleToMock.js'
 // they will be replaced by your mocks instead.
+const path = require('path')
+const Module = require('module')
+const originalRequire = Module.prototype.require
 module.exports = function makeProxyRequire(moduleMap) {
   Module.prototype.require = function proxyRequire(mod) {
     // need to use path.basename() to convert e.g. '.../something.js' --> 'something.js'
     return moduleMap[path.basename(mod)] || originalRequire.call(this, mod)
   }
 }
-```

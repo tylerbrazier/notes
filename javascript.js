@@ -9,7 +9,9 @@ for (const char  of 'abc')         { /* char  = 'a','b','c' */ }
 
 
 // Destructure renaming:
+const obj = { old_name: 'tyler' };
 const { old_name: newName } = obj;
+console.log(newName); // 'tyler'
 
 
 (function() {

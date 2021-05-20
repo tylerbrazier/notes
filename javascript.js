@@ -83,6 +83,27 @@ async function wait(ms, ...args) {
 	return new Promise(resolve => setTimeout(resolve, ms, ...args))
 }
 
+
+/*
+groupBy([
+	{ name: 'tyler', age: 31 },
+	{ name: 'tyler', age: 21 },
+	{ name: 'jc', age: 7 },
+	{ name: 'jc', age: 33 },
+], 'name')
+{
+	tyler: [ { name: 'tyler', age: 31 }, { name: 'tyler', age: 21 } ],
+	jc:    [ { name: 'jc',    age: 7  }, { name: 'jc',    age: 33 } ],
+}
+*/
+function groupBy(array, field) {
+	return array.reduce((acc, cur) => {
+		(cur[field] in acc) ? acc[cur[field]].push(cur) : acc[cur[field]] = [cur];
+		return acc;
+	}, {});
+}
+
+
 // This module redefines how require() works so that we can mock modules for tests.
 // At the top of your test file you can put something like:
 //

@@ -1,5 +1,6 @@
 /* Javascript Notes */
 
+
 // for...in iterates over INDEXES in arrays, KEYS in object
 for (const index in ['a', 'b', 'c']) { /* index = 0, 1, 2   */ }
 for (const key   in {a:1, b:2, c:3}) { /* key = 'a','b','c' */ }
@@ -12,6 +13,13 @@ for (const char  of 'abc')         { /* char  = 'a','b','c' */ }
 const obj = { old_name: 'tyler' };
 const { old_name: newName } = obj;
 console.log(newName); // 'tyler'
+
+
+// immutable sorting (because array.sort() will modify array)
+var array = [3,2,1];
+[...array].sort();    // [1,2,3]
+array.slice().sort(); // [1,2,3]
+console.log(array);   // [3,2,1] (unmodified)
 
 
 (function() {

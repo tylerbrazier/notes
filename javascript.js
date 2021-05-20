@@ -1,9 +1,12 @@
-// javascript notes
+/* Javascript Notes */
 
-//
 // for...in iterates over INDEXES in arrays, KEYS in object
+for (const index in ['a', 'b', 'c']) { /* index = 0, 1, 2   */ }
+for (const key   in {a:1, b:2, c:3}) { /* key = 'a','b','c' */ }
 // for...of iterates over VALUES in arrays, CHARS in strings
-//
+for (const value of ['a','b','c']) { /* value = 'a','b','c' */ }
+for (const char  of 'abc')         { /* char  = 'a','b','c' */ }
+
 
 // Destructure renaming:
 const { old_name: newName } = obj;

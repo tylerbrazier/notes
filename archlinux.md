@@ -52,6 +52,12 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 	git
 	openssh
 	htop
+	base-devel  # for AUR
+
+## AUR
+<https://wiki.archlinux.org/title/Arch_User_Repository>
+
+	makepkg -sirc  # syncdeps, install, rmdeps, clean
 
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>

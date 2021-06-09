@@ -107,9 +107,10 @@ function groupBy(array, field) {
 // This module redefines how require() works so that we can mock modules for tests.
 // At the top of your test file you can put something like:
 //
+//     var mockFn = null // redefine mockFn later in the test
 //     require('.../proxyRequire.js')({
 //       'node-fetch': function mockFetch(...) { ... },
-//       'someOtherModuleToMock.js': { mockExportedProp1: ..., mockExportedProp2: ... }
+//       'someOtherModuleToMock.js': { prop: 'mocked value', fn: (args) => mockFn(args) }
 //       ...
 //     })
 //     const moduleToBeTested = require('.../moduleToBeTested.js')

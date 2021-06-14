@@ -1,7 +1,7 @@
 /* Javascript Notes */
 
 
-// for...in iterates over INDEXES in arrays, KEYS in object
+// for...in iterates over INDEXES in arrays, KEYS in object (mnemonic: INdex)
 for (const index in ['a', 'b', 'c']) { /* index = 0, 1, 2   */ }
 for (const key   in {a:1, b:2, c:3}) { /* key = 'a','b','c' */ }
 // for...of iterates over VALUES in arrays, CHARS in strings

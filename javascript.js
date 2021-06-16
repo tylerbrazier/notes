@@ -126,3 +126,11 @@ module.exports = function makeProxyRequire(moduleMap) {
     return moduleMap[path.basename(mod)] || originalRequire.call(this, mod)
   }
 }
+
+
+/* Linting in Vim
+ * Either make a recording using q or copy the following line into a letter register:
+ *   :cexpr system('npx -q eslint -f unix .')
+ * Then run it using @
+ * :help complex-repeat
+ */

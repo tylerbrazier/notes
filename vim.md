@@ -23,3 +23,5 @@ Turn on `hlsearch` to highlight the occurrences.
 `g;` to jump back to where text was last changed.
 Repeat `g;g;g;`... to keep jumping back to older change locations.
 (`:help changelist` for more info.)
+
+<https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce>

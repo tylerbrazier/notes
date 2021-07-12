@@ -126,6 +126,7 @@ Install:
 	i3status
 	swayidle
 	brightnessctl         # for adjusting screen brightness
+	playerctl             # for play/pause/etc. keys
 	xorg-server-xwayland  # needed to run X11 programs
 	firefox               # and/or chromium
 	gvim                  # includes clipboard support

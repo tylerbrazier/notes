@@ -132,11 +132,7 @@ Install:
 	gvim                  # includes clipboard support
 	alsa-utils            # sound control from userspace
 
-Configuration files:
-
-	curl -L http://tylerbrazier.com/de/install.sh | bash
-
-In firefox, change a couple of settings by going to `about:config`:
+In firefox, `about:config`:
 
 - disable `browser.chrome.toolbar_tips` because tooltips don't go away when switching windows
 - disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt

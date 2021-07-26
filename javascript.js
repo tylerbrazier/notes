@@ -107,20 +107,20 @@ function groupBy(array, field) {
 // This module redefines how require() works so that we can mock modules for tests.
 // At the top of your test file you can put something like:
 //
-//     var mockFn = null // redefine mockFn later in the test
-//     require('.../proxyRequire.js')({
-//       'node-fetch': function mockFetch(...) { ... },
-//       'someOtherModuleToMock.js': { prop: 'mocked value', fn: (args) => mockFn(args) }
+//     require('.../mock.js')({
+//       'node-fetch': function mockedFetch(...) { ... },
+//       'someOtherModuleToMock.js': { prop: 'mocked value', fn: (args) => mockedFn(args) }
 //       ...
 //     })
-//     const moduleToBeTested = require('.../moduleToBeTested.js')
+//     var mockedFn = ... // redefine later in the test to change the behaviour of fn
+//     var moduleToBeTested = require('.../moduleToBeTested.js')
 //
 // Then when moduleToBeTested.js requires 'node-fetch' or '.../someOtherModuleToMock.js'
 // they will be replaced by your mocks instead.
 const path = require('path')
 const Module = require('module')
 const originalRequire = Module.prototype.require
-module.exports = function makeProxyRequire(moduleMap) {
+module.exports = function mock(moduleMap) {
   Module.prototype.require = function proxyRequire(mod) {
     // need to use path.basename() to convert e.g. '.../something.js' --> 'something.js'
     return moduleMap[path.basename(mod)] || originalRequire.call(this, mod)

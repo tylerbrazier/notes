@@ -1,6 +1,12 @@
 # Bash notes
 A good place for learning/reference: <https://mywiki.wooledge.org/>
 
+Pure sh bible: <https://github.com/dylanaraps/pure-sh-bible>
+
+Pure bash bible: <https://github.com/dylanaraps/pure-bash-bible>
+
+Shellcheck (lint): <https://www.shellcheck.net/>
+
 ## Builtin Commands
 `read -s -p 'Password: ' var` will prompt for password, storing it in `var`.
 `-s` (silent) will hide input. `-n 1` would read only one typed character.

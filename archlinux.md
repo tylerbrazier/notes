@@ -47,6 +47,7 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 	grub
 	efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
 	os-prober   # for dual-booting
+	ntfs-3g     # to mount ntfs drives
 	intel-ucode
 	sudo
 	git

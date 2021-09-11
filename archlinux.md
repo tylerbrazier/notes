@@ -137,6 +137,8 @@ Install:
 	swayidle
 	brightnessctl         # for adjusting screen brightness
 	playerctl             # for play/pause/etc. keys
+	grim                  # screenshots
+	slurp                 # select screen region for screenshots
 	xorg-server-xwayland  # needed to run X11 programs
 	firefox               # and/or chromium
 	gvim                  # includes clipboard support

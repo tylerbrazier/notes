@@ -116,15 +116,6 @@ To prevent keyboard/mouse from waking the machine from suspend
 I wasn't able to keep the keyboard enabled but the mouse disabled
 so I just disabled everything and use the power button to wake from sleep.
 
-## Android
-<https://wiki.archlinux.org/title/Media_Transfer_Protocol>
-
-	pacman -S android-file-transfer android-udev
-	mkdir ~/mnt
-	aft-mtp-mount ~/mnt
-	# ...
-	umount ~/mnt
-
 ## GUI (sway)
 Install:
 

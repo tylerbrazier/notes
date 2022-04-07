@@ -126,8 +126,10 @@ Install:
 	dmenu
 	i3status
 	swayidle
+	mpv
+	mpv-mpris             # for play/pause/etc keys
+	playerctl             # for play/pause/etc keys (firefox/vlc/etc)
 	brightnessctl         # for adjusting screen brightness
-	playerctl             # for play/pause/etc. keys
 	grim                  # screenshots
 	slurp                 # select screen region for screenshots
 	xorg-server-xwayland  # needed to run X11 programs

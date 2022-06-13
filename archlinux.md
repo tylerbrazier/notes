@@ -40,7 +40,6 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 ## Packages
 	bash-completion
 	vim
-	tmux
 	iwd         # for wifi
 	man-db
 	man-pages
@@ -127,6 +126,7 @@ Install:
 	dmenu
 	i3status
 	swayidle
+	syncthing
 	mpv
 	mpv-mpris             # for play/pause/etc keys
 	playerctl             # for play/pause/etc keys (firefox/vlc/etc)

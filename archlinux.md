@@ -122,7 +122,8 @@ Install:
 	sway
 	mesa        # intel video drivers
 	ttf-dejavu  # needs a font
-	alacritty
+	foot        # sway's default term
+	foot-terminfo
 	dmenu
 	i3status
 	swayidle

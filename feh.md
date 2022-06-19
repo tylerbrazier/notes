@@ -8,3 +8,5 @@ Useful keyboard shortcuts:
 
 	up/down: zoom in/out
 	s: save image to dir specified by -j (or cwd)
+	x: close current window
+	q: quit feh

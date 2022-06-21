@@ -1,7 +1,8 @@
 Download audio and videos from youtube.
 <https://youtube-dl.org/>
 
-([youtube-dlc](https://github.com/blackjack4494/yt-dlc) is an alternative.)
+(~~[youtube-dlc](https://github.com/blackjack4494/yt-dlc)~~
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) is an alternative.)
 
 Useful `~/.bashrc` aliases:
 

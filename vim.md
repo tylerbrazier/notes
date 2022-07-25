@@ -24,4 +24,6 @@ Turn on `hlsearch` to highlight the occurrences.
 Repeat `g;g;g;`... to keep jumping back to older change locations.
 (`:help changelist` for more info.)
 
+Delete traling whitespace: `:%s/\s\+$//`
+
 <https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce>

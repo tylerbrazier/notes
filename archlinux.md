@@ -143,3 +143,13 @@ In firefox, `about:config`:
 - disable `browser.chrome.toolbar_tips` because tooltips don't go away when switching windows
 - disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt
 - disable `browser.fullscreen.autohide` to prevent the top from disappearing on fullscreen
+
+## Pacman
+If `pacman -Syu` fails with
+
+	error: key "XXXXXXXXXXXXXXXX" could not be looked up remotely
+	error: required key missing from keyring
+	error: failed to commit transaction (unexpected error)
+	Errors occurred, no packages were upgraded.
+
+try `pacman -S archlinux-keyring` then `pacman -Su` again.

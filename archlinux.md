@@ -115,6 +115,9 @@ To prevent keyboard/mouse from waking the machine from suspend
 I wasn't able to keep the keyboard enabled but the mouse disabled
 so I just disabled everything and use the power button to wake from sleep.
 
+## Auto login
+<https://wiki.archlinux.org/title/getty#Automatic_login_to_virtual_console>
+
 ## GUI (sway)
 Install:
 
@@ -143,6 +146,11 @@ In firefox, `about:config`:
 - disable `browser.chrome.toolbar_tips` because tooltips don't go away when switching windows
 - disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt
 - disable `browser.fullscreen.autohide` to prevent the top from disappearing on fullscreen
+
+To automatically start sway on login:
+<https://wiki.archlinux.org/title/sway#Automatically_on_TTY_login>.
+(I put the configuration in `/etc/bash.bashrc` since my `~/.bashrc` may be overwritten
+from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
 
 ## Pacman
 If `pacman -Syu` fails with

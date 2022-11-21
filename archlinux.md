@@ -18,7 +18,7 @@ See **Packages** below for a list to `pacstrap`.
 
 	EDITOR=vim visudo
 	# uncomment this line to allow wheel group to sudo w/out a password:
-	%wheel ALL=(ALL) NOPASSWD: ALL
+	%wheel ALL=(ALL:ALL) NOPASSWD: ALL
 
 	# as the new user:
 	ssh-keygen

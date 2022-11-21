@@ -3,6 +3,7 @@ Useful options:
 	-t Thumbnail mode: show all images as clickable thumbnails
 	-. Scale images to fit window geometry (good for tiling window managers)
 	-j <directory> Specify where to save images
+	--draw-exif show metadata
 
 Useful keyboard shortcuts:
 

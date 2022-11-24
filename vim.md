@@ -26,4 +26,11 @@ Repeat `g;g;g;`... to keep jumping back to older change locations.
 
 Delete traling whitespace: `:%s/\s\+$//`
 
+To put a newline after each *pattern*:
+`:g/pattern/normal o`
+
+To delete all empty lines:
+`:g/^$/d _`
+(the blackhole register `_` is used to save time)
+
 <https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce>

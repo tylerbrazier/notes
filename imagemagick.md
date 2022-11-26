@@ -1,7 +1,7 @@
-Resize an image:
+Resize an image to 20% of the original:
 
-    magick convert input.jpg -resize 50% output.jpg
+    magick input.jpg -resize 20% output.jpg
 
 Convert heic to jpeg:
 
-    magick convert input.heic output.jpg
+    magick input.heic output.jpg

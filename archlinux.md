@@ -13,16 +13,16 @@ Follow the [Installation guide](https://wiki.archlinux.org/index.php/Installatio
 See **Packages** below for a list to `pacstrap`.
 
 ## Post-installation
-	useradd -m -G wheel -s /bin/bash tyler
-	passwd tyler
+    useradd -m -G wheel -s /bin/bash tyler
+    passwd tyler
 
-	EDITOR=vim visudo
-	# uncomment this line to allow wheel group to sudo w/out a password:
-	%wheel ALL=(ALL:ALL) NOPASSWD: ALL
+    EDITOR=vim visudo
+    # uncomment this line to allow wheel group to sudo w/out a password:
+    %wheel ALL=(ALL:ALL) NOPASSWD: ALL
 
-	# as the new user:
-	ssh-keygen
-	curl -L http://tylerbrazier.com/dotfiles/install.sh | bash
+    # as the new user:
+    ssh-keygen
+    curl -L http://tylerbrazier.com/dotfiles/install.sh | bash
 
 To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
 
@@ -38,26 +38,26 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 - Reboot (or edit `/sys/power/resume` according to the instructions on the wiki)
 
 ## Packages
-	bash-completion
-	vim
-	iwd         # for wifi
-	man-db
-	man-pages
-	grub
-	efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
-	os-prober   # for dual-booting
-	ntfs-3g     # to mount ntfs drives
-	intel-ucode
-	sudo
-	git
-	openssh
-	htop
-	base-devel  # for AUR
+    bash-completion
+    vim
+    iwd         # for wifi
+    man-db
+    man-pages
+    grub
+    efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
+    os-prober   # for dual-booting
+    ntfs-3g     # to mount ntfs drives
+    intel-ucode
+    sudo
+    git
+    openssh
+    htop
+    base-devel  # for AUR
 
 ## AUR
 <https://wiki.archlinux.org/title/Arch_User_Repository>
 
-	makepkg -sirc  # syncdeps, install, rmdeps, clean
+    makepkg -sirc  # syncdeps, install, rmdeps, clean
 
 ## Network
 <https://wiki.archlinux.org/index.php/Network_configuration>
@@ -66,51 +66,51 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 For wireless, [iwd](https://wiki.archlinux.org/index.php/Iwd) is good.
 Edit `/etc/iwd/main.conf` and add:
 
-	[General]
-	# let iwd handle getting an IP address (DHCP)
-	EnableNetworkConfiguration=true
+    [General]
+    # let iwd handle getting an IP address (DHCP)
+    EnableNetworkConfiguration=true
 
-	[Network]
-	# use systemd-resolved for DNS:
-	NameResolvingService=systemd
+    [Network]
+    # use systemd-resolved for DNS:
+    NameResolvingService=systemd
 
 Then:
 
-	systemctl start/enable iwd.service
-	systemctl start/enable systemd-resolved.service
+    systemctl start/enable iwd.service
+    systemctl start/enable systemd-resolved.service
 
 ### Wired
 [systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd)
 can handle getting an IP address (DHCP);
 create a file `/etc/systemd/network/20-wired.network` with:
 
-	[Match]
-	Name=en*
+    [Match]
+    Name=en*
 
-	[Network]
-	DHCP=yes
+    [Network]
+    DHCP=yes
 
 Then:
 
-	systemctl start/enable systemd-networkd.service
-	systemctl start/enable systemd-resolved.service
+    systemctl start/enable systemd-networkd.service
+    systemctl start/enable systemd-resolved.service
 
 ## Power management
 To prevent keyboard/mouse from waking the machine from suspend
 (see <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Instantaneous_wakeups_from_suspend>):
 
-	# check enabled devices:
-	cat /proc/acpi/wakeup
+    # check enabled devices:
+    cat /proc/acpi/wakeup
 
-	# toggle enabled/disabled by echoing the device name to the file:
-	echo USBE > /proc/acpi/wakeup
-	echo USE2 > /proc/acpi/wakeup
+    # toggle enabled/disabled by echoing the device name to the file:
+    echo USBE > /proc/acpi/wakeup
+    echo USE2 > /proc/acpi/wakeup
 
-	# to persist across reboots:
-	# (the device names need to be joined together all on one line)
-	vim /etc/tmpfiles.d/100-disable-device-wakeup.conf
-		#	Path			Mode	UID	GID	Age	Argument
-		w	/proc/acpi/wakeup	-	-	-	-	USBEUSE2
+    # to persist across reboots:
+    # (the device names need to be joined together all on one line)
+    vim /etc/tmpfiles.d/100-disable-device-wakeup.conf
+        #    Path            Mode    UID    GID    Age    Argument
+        w    /proc/acpi/wakeup    -    -    -    -    USBEUSE2
 
 I wasn't able to keep the keyboard enabled but the mouse disabled
 so I just disabled everything and use the power button to wake from sleep.
@@ -121,25 +121,25 @@ so I just disabled everything and use the power button to wake from sleep.
 ## GUI (sway)
 Install:
 
-	sway
-	mesa        # intel video drivers
-	ttf-dejavu  # needs a font
-	foot        # sway's default term
-	foot-terminfo
-	dmenu
-	i3status
-	swayidle
-	syncthing
-	mpv
-	mpv-mpris             # for play/pause/etc keys
-	playerctl             # for play/pause/etc keys (firefox/vlc/etc)
-	brightnessctl         # for adjusting screen brightness
-	grim                  # screenshots
-	slurp                 # select screen region for screenshots
-	xorg-server-xwayland  # needed to run X11 programs
-	firefox               # and/or chromium
-	gvim                  # includes clipboard support
-	alsa-utils            # sound control from userspace
+    sway
+    mesa        # intel video drivers
+    ttf-dejavu  # needs a font
+    foot        # sway's default term
+    foot-terminfo
+    dmenu
+    i3status
+    swayidle
+    syncthing
+    mpv
+    mpv-mpris             # for play/pause/etc keys
+    playerctl             # for play/pause/etc keys (firefox/vlc/etc)
+    brightnessctl         # for adjusting screen brightness
+    grim                  # screenshots
+    slurp                 # select screen region for screenshots
+    xorg-server-xwayland  # needed to run X11 programs
+    firefox               # and/or chromium
+    gvim                  # includes clipboard support
+    alsa-utils            # sound control from userspace
 
 In firefox, `about:config`:
 
@@ -154,9 +154,9 @@ from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
 ## Pacman
 If `pacman -Syu` fails with
 
-	error: key "XXXXXXXXXXXXXXXX" could not be looked up remotely
-	error: required key missing from keyring
-	error: failed to commit transaction (unexpected error)
-	Errors occurred, no packages were upgraded.
+    error: key "XXXXXXXXXXXXXXXX" could not be looked up remotely
+    error: required key missing from keyring
+    error: failed to commit transaction (unexpected error)
+    Errors occurred, no packages were upgraded.
 
 try `pacman -S archlinux-keyring` then `pacman -Su` again.

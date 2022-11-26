@@ -32,15 +32,15 @@ Commands and arguments can often be completed with `Tab`
 ## .dockerignore
 This usually includes things like:
 
-	README.md
-	node_modules
-	tests
-	*.log
-	.env
-	.eslintrc.js
-	.editorconfig
-	.git
-	.gitignore
+    README.md
+    node_modules
+    tests
+    *.log
+    .env
+    .eslintrc.js
+    .editorconfig
+    .git
+    .gitignore
 
 <https://docs.docker.com/engine/reference/builder/#dockerignore-file>
 

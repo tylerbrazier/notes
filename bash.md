@@ -90,3 +90,4 @@ two `%%/##` strips the longest matching pattern:
     }
 
     result=$(ask "-n 1 -p 'Will you follow me? [Y/n] '" "y")
+    if [ "${result,,}" == ... ] ... # ${var,,} will lowercase $var

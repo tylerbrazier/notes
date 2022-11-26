@@ -15,3 +15,4 @@ Trailing slash in src/ will sync the files *in* src rather than the dir itself.
     -e specify remote shell (e.g. different ssh port: -e 'ssh -p 8022')
     -n dry run
     --exclude '.*' exclude hidden files/dirs
+    --progress

@@ -33,4 +33,7 @@ To delete all empty lines:
 `:g/^$/d _`
 (the blackhole register `_` is used to save time)
 
+Grep for tab characters:
+`:grep '<ctrl-v><tab>'`
+
 <https://gist.github.com/romainl/4b9f139d2a8694612b924322de1025ce>

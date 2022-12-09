@@ -140,6 +140,7 @@ Install:
     firefox               # and/or chromium
     gvim                  # includes clipboard support
     alsa-utils            # sound control from userspace
+    archlinux-wallpaper   # backgrounds
 
 In firefox, `about:config`:
 

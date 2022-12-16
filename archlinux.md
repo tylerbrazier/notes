@@ -149,7 +149,7 @@ In firefox, `about:config`:
 
 To automatically start sway on login:
 <https://wiki.archlinux.org/title/sway#Automatically_on_TTY_login>.
-(I put the configuration in `/etc/bash.bashrc` since my `~/.bashrc` may be overwritten
+(I put the configuration in `~/.bash_profile` since my `~/.bashrc` may be overwritten
 from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
 
 ## Pacman

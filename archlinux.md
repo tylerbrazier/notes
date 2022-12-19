@@ -129,7 +129,6 @@ Install:
     dmenu
     i3status
     swayidle
-    syncthing
     mpv
     mpv-mpris             # for play/pause/etc keys
     playerctl             # for play/pause/etc keys (firefox/vlc/etc)

@@ -1,5 +1,8 @@
 # Vim notes
 
+Wayland clipboard: Until this is fixed: <https://github.com/vim/vim/issues/5157>
+just hold Shift and select the text with the mouse, ctrl-shift-c.
+
 `=` followed by a motion to auto indent;
 e.g. `=G` will indent all the lines from cursor until end of file.
 `==` to auto indent current line.

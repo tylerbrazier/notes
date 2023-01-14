@@ -1,0 +1,6 @@
+sudo pacman -S bluez bluez-utils (pulseaudio-bluetooth)
+(restart?)
+
+sudo systemctl start/enable bluetooth.service
+bluetoothctl
+(Don't remember what I did) https://wiki.archlinux.org/title/Bluetooth

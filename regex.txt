@@ -1,0 +1,8 @@
+POSIX ERE (Extended Regular Expressions) used by awk, grep -E, etc:
+https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions
+
+POSIX BRE (Basic Regular Expressions):
+https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions
+
+Others:
+https://en.wikibooks.org/wiki/Regular_Expressions

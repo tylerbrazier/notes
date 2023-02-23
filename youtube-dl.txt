@@ -1,7 +1,7 @@
 https://github.com/ytdl-org/youtube-dl
 
 There are alternatives like:
-https://github.com/blackjack4494/yt-dlc
+https://github.com/blackjack4494/yt-dlc (now inactive)
 and
 https://github.com/yt-dlp/yt-dlp
 

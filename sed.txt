@@ -1,0 +1,15 @@
+https://www.grymoire.com/Unix/Sed.html
+
+To change values between sections in .ini files:
+	sed '
+	# The following works even for the last section in the file,
+	# since the range works like an on/off switch:
+	# https://www.grymoire.com/Unix/Sed.html#uh-29
+	/\[section-a\]/,/\[.*\]/ {
+	s/^\(setting1=\).*/\1newvalue/
+	# or equivalently like this:
+	/^setting2=/ s/=.*/=newvalue/
+	}
+	/\[another-section\]/,/\[.*\]/ {
+	...
+	}' <whatever.ini

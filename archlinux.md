@@ -152,11 +152,4 @@ To automatically start sway on login:
 from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
 
 ## Pacman
-If `pacman -Syu` fails with
-
-    error: key "XXXXXXXXXXXXXXXX" could not be looked up remotely
-    error: required key missing from keyring
-    error: failed to commit transaction (unexpected error)
-    Errors occurred, no packages were upgraded.
-
-try `pacman -S archlinux-keyring` then `pacman -Su` again.
+If `pacman -Syu` fails with key or signature errors try `pacman -S archlinux-keyring` then `pacman -Su` again.

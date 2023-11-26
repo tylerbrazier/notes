@@ -41,7 +41,7 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
     bash-completion
     vim
     iwd         # for wifi
-    man-db
+    mandoc
     man-pages
     grub
     efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems

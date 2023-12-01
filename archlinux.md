@@ -141,11 +141,6 @@ Install:
     alsa-utils            # sound control from userspace
     archlinux-wallpaper   # backgrounds
 
-In firefox, `about:config`:
-
-- disable `ui.key.menuAccessKeyFocuses` to prevent the menu from popping up on Alt
-- disable `browser.fullscreen.autohide` to prevent the top from disappearing on fullscreen
-
 To automatically start sway on login:
 <https://wiki.archlinux.org/title/sway#Automatically_on_TTY_login>.
 (I put the configuration in `~/.bash_profile` since my `~/.bashrc` may be overwritten

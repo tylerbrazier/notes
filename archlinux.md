@@ -151,6 +151,11 @@ Install:
     alsa-utils            # sound control from userspace
     archlinux-wallpaper   # backgrounds
 
+Then as root:
+
+    systemctl start/enable seatd.service
+    gpasswd -a tyler seat
+
 To automatically start sway on login:
 <https://wiki.archlinux.org/title/sway#Automatically_on_TTY_login>.
 (I put the configuration in `~/.bash_profile` since my `~/.bashrc` may be overwritten

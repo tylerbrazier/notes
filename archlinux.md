@@ -36,16 +36,21 @@ For setting up Windows dual boot, os-prober couldn't detect the partition from t
 
 To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
 
-- Set up a swap file: <https://wiki.archlinux.org/index.php/swap#Swap_file>
-- Get the UUID of the disk with the `/swapfile` using `lsblk -f` or `blkid`.
-- Edit `/etc/default/grub` and append the kernel param `resume=UUID=<id>` to `GRUB_CMDLINE_LINUX_DEFAULT`
-- Run `filefrag -v /swapfile` and copy the first value (without trailing periods) under `physical_offset` from the first row
-- Edit `/etc/default/grub` and append the kernel param `resume_offset=<offset>` to `GRUB_CMDLINE_LINUX_DEFAULT`
-- Regenerate grub config: `grub-mkconfig -o /boot/grub/grub.cfg`
-- Consider reducing swappiness if you have plenty of RAM: <https://wiki.archlinux.org/index.php/Swap#Swappiness>
-- Add the `resume` hook to `/etc/mkinitcpio.conf` (see <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Configure_the_initramfs>)
-- Regenerate the initramfs with `mkinitcpio -P`
-- Reboot (or edit `/sys/power/resume` according to the instructions on the wiki)
+- Set up a swap file: <https://wiki.archlinux.org/index.php/swap#Swap_file>.
+- Add the `resume` hook to `/etc/mkinitcpio.conf` (see
+  <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Configure_the_initramfs>).
+- Run `filefrag -v /swapfile` and copy the first value
+  (without trailing periods) under `physical_offset` from the first row.
+- Also copy the UUID of the disk with the `/swapfile` using
+  `lsblk -f` or `blkid`.
+- Edit `/etc/default/grub` and append the kernel params to
+  `GRUB_CMDLINE_LINUX_DEFAULT`:
+  `resume=UUID=<id>` and `resume_offset=<offset>`
+- Regenerate grub config: `grub-mkconfig -o /boot/grub/grub.cfg`.
+- Consider reducing swappiness if you have plenty of RAM:
+  <https://wiki.archlinux.org/index.php/Swap#Swappiness>.
+- Regenerate the initramfs with `mkinitcpio -P`.
+- Reboot (or edit `/sys/power/resume` according to the wiki).
 
 ## Packages
     bash-completion

@@ -32,7 +32,7 @@ For setting up Windows dual boot, os-prober couldn't detect the partition from t
 
     # as the new user:
     ssh-keygen
-    curl -L http://tylerbrazier.com/dotfiles/install.sh | bash
+    git clone git@github.com:tylerbrazier/dotfiles.git
 
 To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
 

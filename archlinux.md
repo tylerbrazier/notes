@@ -139,6 +139,9 @@ Install:
     dmenu
     i3status
     swayidle
+    swayimg
+    swaybg
+    wl-clipboard
     mpv
     mpv-mpris             # for play/pause/etc keys
     playerctl             # for play/pause/etc keys (firefox/vlc/etc)
@@ -147,7 +150,6 @@ Install:
     slurp                 # select screen region for screenshots
     xorg-server-xwayland  # needed to run X11 programs
     firefox               # and/or chromium
-    gvim                  # includes clipboard support
     alsa-utils            # sound control from userspace
     archlinux-wallpaper   # backgrounds
 

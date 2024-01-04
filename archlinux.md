@@ -12,6 +12,16 @@ See <https://wiki.archlinux.org/index.php/USB_flash_installation_medium>.
 Follow the [Installation guide](https://wiki.archlinux.org/index.php/Installation_guide).
 See **Packages** below for a list to `pacstrap`.
 
+## Bootloader/GRUB
+I mounted the EFI system partition (esp) to `/efi` because `/boot` is where the kernels go and the esp isn't big enough to fit the kernels.
+
+For setting up Windows dual boot, os-prober couldn't detect the partition from the chroot so the following steps need to be done from the newly booted system:
+
+- Install `os-prober`
+- Edit `/etc/default/grub` and set `GRUB_DISABLE_OS_PROBER=false`
+- Mount the windows partition (doesn't matter where; `/mnt` works) and esp
+- Run again: `grub-mkconfig -o /boot/grub/grub.cfg`
+
 ## Post-installation
     useradd -m -G wheel -s /bin/bash tyler
     passwd tyler

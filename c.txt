@@ -1,0 +1,21 @@
+The four phases of translation:
+
+   program.c file
+      |
+      V
+ Preprocessing: removes //comments, expands all #include/define/etc
+      |
+      | preprocessed.i file (still C)
+      V
+  Compiling: translates C into assembly
+      |
+      | assembly.s file (still text)
+      V
+  Assembling: translates assembly into machine code
+      |
+      | object.o file (binary)
+      V
+   Linking: resolves references between objects
+      |
+      V
+    a.out file (executable)

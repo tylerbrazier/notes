@@ -1,3 +1,4 @@
 For advanced settings, browse to "about:config":
 disable "ui.key.menuAccessKeyFocuses" to prevent the menu from popping up on Alt
 disable "browser.fullscreen.autohide" to prevent the top from disappearing on fullscreen
+disable "browser.tabs.allowTabDetach" to prevent accidental moving tabs to new windows

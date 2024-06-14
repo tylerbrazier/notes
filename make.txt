@@ -1,1 +1,9 @@
 https://makefiletutorial.com/
+
+Rules have this form:
+
+	target: prerequisites
+		commands
+
+target and prerequisites (also called dependencies) are file names.
+The idea is that target will be created using commands against the prerequisites.

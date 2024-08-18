@@ -1,0 +1,70 @@
+alpinelinux.org
+Alpine's wiki isn't as good as Arch's but it's better than nothing.
+
+To install on my laptop, I flashed the standard image to a usb stick.
+These are the steps I took to install Alpine along side Windows (dualboot).
+This page really helped me understand booting & UEFI:
+https://wiki.archlinux.org/title/Arch_boot_process
+When booted from the usb stick:
+	
+	setup-alpine  # choose 'none' for disks, configs, & apk cache
+
+	# Partitioning:
+	# I made a root partition and
+	# swap partition of size=RAM type="Linux Swap"
+	apk add cfdisk
+	cfdisk /dev/sdX
+	mdev -s  # may need to repopulate /dev
+
+	# Formating:
+	apk add e2fsprogs
+	fdisk -l  # double check device & partitions
+	mkfs.ext4 /dev/sdXY
+	mkswap /dev/sdXZ
+
+	# Mount the root partition and esp:
+	# (the laptop disk already had an esp on it)
+	blkid  # check fs types
+	mount -t ext4 /dev/sdXY /mnt
+	mkdir -p /mnt/boot/efi
+	mount -t vfat /dev/sdXE /mnt/boot/efi
+
+	# esp/EFI/Boot/ already existed but setup-disk expects
+	# boot/ with lower case letters so rename that first:
+	mv /mnt/boot/efi/EFI/Boot /mnt/boot/efi/EFI/tmp
+	mv /mnt/boot/efi/EFI/tmp /mnt/boot/efi/EFI/boot
+
+	USE_EFI=1 setup-disk -v -m sys /mnt
+
+	vi /mnt/etc/fstab
+	# remove unnecessary mounts like esp and add:
+	# /dev/sdXZ none swap defaults 0 0
+
+	reboot
+
+	# I also needed to adjust UEFI boot order from the laptop's BIOS menu.
+
+Postinstall:
+
+	setup-user -a tyler
+	# or if you already added one during setup-alpine:
+	apk add doas
+	adduser tyler wheel
+
+	vi /etc/doas.d/doas.conf  # permit nopass :wheel
+
+	apk add openssh-client-default
+	ssh-keygen
+
+	setup-desktop sway
+	# also need graphics drivers:
+	# https://wiki.alpinelinux.org/wiki/Sway#Install_Graphics_Drivers
+	# https://wiki.archlinux.org/title/Hardware_video_acceleration
+	sway
+
+	# open firefox and add your ssh public key to github
+
+	apk add git bash
+	git clone git@github.com:tylerbrazier/dotfiles.git
+	cd dotfiles
+	bash install.sh

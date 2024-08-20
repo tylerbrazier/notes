@@ -1,12 +1,19 @@
 alpinelinux.org
 Alpine's wiki isn't as good as Arch's but it's better than nothing.
 
+OpenRC info:
+https://docs.alpinelinux.org/user-handbook/0.1a/Working/openrc.html
+https://github.com/OpenRC/openrc/blob/master/user-guide.md
+
+APK info:
+https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html
+
 To install on my laptop, I flashed the standard image to a usb stick.
 These are the steps I took to install Alpine along side Windows (dualboot).
 This page really helped me understand booting & UEFI:
 https://wiki.archlinux.org/title/Arch_boot_process
 When booted from the usb stick:
-	
+
 	setup-alpine  # choose 'none' for disks, configs, & apk cache
 
 	# Partitioning:
@@ -30,7 +37,7 @@ When booted from the usb stick:
 	mount -t vfat /dev/sdXE /mnt/boot/efi
 
 	# esp/EFI/Boot/ already existed but setup-disk expects
-	# boot/ with lower case letters so rename that first:
+	# "boot" with lower case letters so rename that first:
 	mv /mnt/boot/efi/EFI/Boot /mnt/boot/efi/EFI/tmp
 	mv /mnt/boot/efi/EFI/tmp /mnt/boot/efi/EFI/boot
 
@@ -46,6 +53,10 @@ When booted from the usb stick:
 
 Postinstall:
 
+	# man pages:
+	# https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ#Documentation_for_all_packages
+	apk add docs
+
 	setup-user -a tyler
 	# or if you already added one during setup-alpine:
 	apk add doas
@@ -57,14 +68,31 @@ Postinstall:
 	ssh-keygen
 
 	setup-desktop sway
+	apk add brightnessctl alsa-utils slurp
 	# also need graphics drivers:
 	# https://wiki.alpinelinux.org/wiki/Sway#Install_Graphics_Drivers
 	# https://wiki.archlinux.org/title/Hardware_video_acceleration
-	sway
+
+	# remember brightness after reboot:
+	rc-service brightnessctl start
+	rc-update add brightnessctl
+	# need to reboot before unprivileged user can run brightnessctl command
+
+	doas -u tyler sway
 
 	# open firefox and add your ssh public key to github
 
-	apk add git bash
+	doas apk add git bash
 	git clone git@github.com:tylerbrazier/dotfiles.git
 	cd dotfiles
 	bash install.sh
+
+TODO:
+- reinstall to verify all these notes are right (can start sway w/o reboot?)
+- switch to iwd? if not, how to add new wireless networks?
+- get suspend working (haven't even tried it yet)
+- don't wait for network, ntp, etc before giving login prompt
+- autologin and auto start sway
+- change shell to bash or switch to alpine's default?
+- get swap working (free -m gives 0 currently)
+- make reference notes about OpenRC and apk (e.g. show if pkg was installed as dep)

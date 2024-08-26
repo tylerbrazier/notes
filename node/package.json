@@ -1,0 +1,10 @@
+{
+	"name": "",
+	"version": "",
+	"type": "module",
+	"devDependencies": {
+		"@eslint/js": "^9.9.1",
+		"eslint": "^9.9.1",
+		"eslint-formatter-unix": "^8.40.0"
+	}
+}

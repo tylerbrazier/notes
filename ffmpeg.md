@@ -19,3 +19,12 @@ Cut the song after 3m:
 Combine `-ss` and `-to` for slicing:
 
     ffmpeg -ss 00:02:00 -to 00:03:00 -i in.mp3 out.mp3
+
+Add album art to mp3:
+(https://stackoverflow.com/q/18710992)
+
+    ffmpeg -i in.mp3 -i cover.jpg \
+        -map 0:0 -map 1:0 \
+        -c copy -id3v2_version 3 \
+        -metadata:s:v title="cover" \
+        -metadata:s:v comment="Cover (front)" out.mp3

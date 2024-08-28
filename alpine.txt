@@ -68,6 +68,7 @@ Now boot from the disk and finish setting up:
 	bash bash-completion
 	openssh-client-default
 	doas
+	iwd
 	git
 	vim
 	mpv
@@ -77,6 +78,11 @@ Now boot from the disk and finish setting up:
 	zzz   # for suspend and hibernate
 	docs  # https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ#Documentation_for_all_packages
 
+	# use iwd instead of wpa_supplicant
+	rc-update delete wpa_supplicant -a
+	apk del wpa_supplicant
+
+	rc-update add iwd default
 	rc-update add swap default
 	rc-update add brightnessctl default
 
@@ -104,10 +110,13 @@ Now boot from the disk and finish setting up:
 	cd dotfiles
 	./install.sh
 
+	# After reboot you'll need to reconnect to wifi with iwd:
+	doas iwctl
+	station wlan0 connect <Tab><Tab>
+
 TODO:
 - reinstall to verify all these notes are right (can start sway w/o reboot?)
 - hibernate
-- switch to iwd? if not, how to add new wireless networks?
 - don't wait for network, ntp, etc before giving login prompt
 - autologin and auto start sway
 - make reference notes about apk (e.g. show if pkg was installed as dep)

@@ -4,6 +4,7 @@ Alpine's wiki isn't as good as Arch's but it's better than nothing.
 OpenRC reference:
 https://docs.alpinelinux.org/user-handbook/0.1a/Working/openrc.html
 https://github.com/OpenRC/openrc/blob/master/user-guide.md
+/etc/rc.conf (includes settings for logging)
 
 	rc-service whatever start/stop/status
 
@@ -82,7 +83,7 @@ Now boot from the disk and finish setting up:
 	rc-update delete wpa_supplicant -a
 	apk del wpa_supplicant
 
-	rc-update add iwd default
+	rc-update add iwd boot
 	rc-update add swap default
 	rc-update add brightnessctl default
 

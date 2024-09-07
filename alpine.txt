@@ -15,7 +15,7 @@ https://github.com/OpenRC/openrc/blob/master/user-guide.md
 
 	rc-update show  # see which services run at which runlevels
 	rc-update add whatever default  # add service to runlevel
-	rc-update delete whatever -a    # remove service from all runlevels
+	rc-update del whatever boot     # or -a (all) instead of runlevel
 
 APK info:
 https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html
@@ -70,6 +70,7 @@ Now boot from the disk and finish setting up:
 	openssh-client-default
 	doas
 	iwd
+	openresolv  # for iwd to handle network configuration
 	git
 	vim
 	mpv
@@ -80,8 +81,15 @@ Now boot from the disk and finish setting up:
 	docs  # https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ#Documentation_for_all_packages
 
 	# use iwd instead of wpa_supplicant
-	rc-update delete wpa_supplicant -a
+	rc-update del wpa_supplicant -a
 	apk del wpa_supplicant
+	# let iwd handle dhcp for faster startup times:
+	vi /etc/network/interfaces  # comment line: iface wlan0 inet dhcp
+	vi /etc/iwd/main.conf  # uncomment:
+		[General]
+		EnableNetworkConfiguration=True
+		[Network]
+		NameResolvingService=resolvconf
 
 	rc-update add iwd boot
 	rc-update add swap default
@@ -118,6 +126,6 @@ Now boot from the disk and finish setting up:
 TODO:
 - reinstall to verify all these notes are right (can start sway w/o reboot?)
 - hibernate
-- don't wait for network, ntp, etc before giving login prompt
+- internet isn't working when changing access points
 - autologin and auto start sway
 - make reference notes about apk (e.g. show if pkg was installed as dep)

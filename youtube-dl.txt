@@ -7,8 +7,9 @@ https://github.com/yt-dlp/yt-dlp
 
 Common options:
 -x			extract audio only; useful for songs
---audio-format		'best' by default
+--audio-format		e.g. 'mp3' ('best' by default)
 --add-metadata		tag the video/audio
+--embed-thumbnail	use video thumbnail as cover art
 --playlist-items	choose specific videos from playlist
 --ignore-errors		to skip unavailable videos
 

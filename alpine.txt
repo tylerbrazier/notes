@@ -75,18 +75,22 @@ Now boot from the disk and finish setting up:
 
 	apk add \
 	bash bash-completion
-	openssh-client-default
 	doas
 	iwd
 	openresolv  # for iwd to handle network configuration
 	git
 	vim
+	htop
+	node
+	npm
 	mpv
+	openssh-client-default
 	brightnessctl
 	alsa-utils
 	slurp # for taking screenshots
 	zzz   # for suspend and hibernate
 	docs  # https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ#Documentation_for_all_packages
+	mandoc-apropos
 
 	# use iwd instead of wpa_supplicant
 	rc-update del wpa_supplicant -a

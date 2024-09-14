@@ -133,6 +133,4 @@ Now boot from the disk and finish setting up:
 
 TODO:
 - reinstall to verify all these notes are right (can start sway w/o reboot?)
-- hibernate
-- internet isn't working when changing access points
 - autologin and auto start sway

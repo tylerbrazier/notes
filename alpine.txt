@@ -84,6 +84,7 @@ Now boot from the disk and finish setting up:
 	node
 	npm
 	mpv
+	agetty  # for autologin
 	openssh-client-default
 	brightnessctl
 	alsa-utils
@@ -116,6 +117,10 @@ Now boot from the disk and finish setting up:
 	# https://wiki.alpinelinux.org/wiki/Change_default_shell
 	vi /etc/passwd  # change tyler's shell to /bin/bash
 
+	# https://wiki.alpinelinux.org/wiki/TTY_Autologin
+	vi /etc/inittab  # change the tty1 line to:
+		tty1::respawn:/sbin/agetty --autologin tyler tty1 linux
+
 	setup-desktop sway
 	# remember to also install graphics drivers:
 	# https://wiki.alpinelinux.org/wiki/Sway#Install_Graphics_Drivers
@@ -131,10 +136,13 @@ Now boot from the disk and finish setting up:
 	cd dotfiles
 	./install.sh
 
+	# https://wiki.archlinux.org/title/Sway#Automatically_on_TTY_login
+	vim ~/.bash_profile
+		[ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ] && exec sway
+
 	# After reboot you'll need to reconnect to wifi with iwd:
 	doas iwctl
 	station wlan0 connect <Tab><Tab>
 
 TODO:
 - reinstall to verify all these notes are right (can start sway w/o reboot?)
-- autologin and auto start sway

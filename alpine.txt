@@ -71,7 +71,9 @@ When booted from the usb stick:
 
 	# I also needed to adjust UEFI boot order from the laptop's BIOS menu.
 
-Now boot from the disk and finish setting up:
+Now boot from the disk and finish setting up (as root):
+
+	setup-apkrepos -o  # enable community repo
 
 	apk add \
 	bash bash-completion
@@ -81,11 +83,11 @@ Now boot from the disk and finish setting up:
 	git
 	vim
 	htop
-	node
+	nodejs
 	npm
 	mpv
 	agetty  # for autologin
-	openssh-client-default
+	openssh-client
 	brightnessctl
 	alsa-utils
 	slurp # for taking screenshots
@@ -94,7 +96,7 @@ Now boot from the disk and finish setting up:
 	mandoc-apropos
 
 	# use iwd instead of wpa_supplicant
-	rc-update del wpa_supplicant -a
+	rc-update del wpa_supplicant boot
 	apk del wpa_supplicant
 	# let iwd handle dhcp for faster startup times:
 	vi /etc/network/interfaces  # comment line: iface wlan0 inet dhcp
@@ -122,11 +124,18 @@ Now boot from the disk and finish setting up:
 		tty1::respawn:/sbin/agetty --autologin tyler tty1 linux
 
 	setup-desktop sway
-	# remember to also install graphics drivers:
+	# Remember to also install graphics drivers:
 	# https://wiki.alpinelinux.org/wiki/Sway#Install_Graphics_Drivers
 	# https://wiki.archlinux.org/title/Hardware_video_acceleration
+	# On my laptop this was:
+	apk add \
+	mesa-dri-gallium \
+	mesa-va-gallium \
+	intel-media-driver
 
-	doas -u tyler sway
+	exit
+	# log in as tyler
+	sway
 
 	ssh-keygen
 
@@ -141,8 +150,5 @@ Now boot from the disk and finish setting up:
 		[ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ] && exec sway
 
 	# After reboot you'll need to reconnect to wifi with iwd:
-	doas iwctl
+	iwctl
 	station wlan0 connect <Tab><Tab>
-
-TODO:
-- reinstall to verify all these notes are right (can start sway w/o reboot?)

@@ -17,8 +17,16 @@ https://github.com/OpenRC/openrc/blob/master/user-guide.md
 	rc-update add whatever default  # add service to runlevel
 	rc-update del whatever boot     # or -a (all) instead of runlevel
 
-APK info:
+APK reference:
 https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html
+
+	apk add package        # install
+	apk del package        # uninstall
+	apk upgrade            # upgrade all packages
+	apk list -I [pattern]  # list [matching]/all installed packages
+	apk info -a package    # show all info about package
+	apk info -W file       # which package owns the file
+	apk search ...
 
 To install on my laptop, I flashed the standard image to a usb stick.
 These are the steps I took to install Alpine along side Windows (dualboot).
@@ -128,4 +136,3 @@ TODO:
 - hibernate
 - internet isn't working when changing access points
 - autologin and auto start sway
-- make reference notes about apk (e.g. show if pkg was installed as dep)

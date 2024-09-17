@@ -2,6 +2,8 @@ Useful options:
 
     --shuffle
     --no-audio-display
+    --audio-device=help  # list audio output devices
+    --audio-device=alsa/hdmi
 
 Keyboard shortcuts:
 

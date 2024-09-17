@@ -1,14 +1,14 @@
 Useful options:
 
-    --shuffle
-    --no-audio-display
-    --audio-device=help  # list audio output devices
-    --audio-device=alsa/hdmi
+	--shuffle
+	--no-audio-display   # don't show cover art
+	--audio-device=help  # list audio output devices
+	--audio-device=alsa/hdmi
 
 Keyboard shortcuts:
 
-    q: quit
-    right/left: seek 5 seconds
-    up/down: seek 60 seconds
-    </>: back/forward in playlist
-    enter: forward in playlist
+	q		quit
+	right/left	seek 5 seconds
+	up/down		seek 60 seconds
+	</>		back/forward in playlist
+	enter		forward in playlist

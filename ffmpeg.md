@@ -29,3 +29,13 @@ Add album art to mp3:
         -metadata:s:v title="cover" \
         -metadata:s:v comment="Cover (front)" \
         out.mp3
+
+Set mp3 tags:
+(https://wiki.multimedia.cx/index.php/FFmpeg_Metadata#MP3)
+
+    ffmpeg -i in.mp3 \
+        -metadata title"Ride Captain Ride" \
+        -metadata album="Open" \
+        -metadata artist="Blues Image" \
+        -metadata track="6" \
+        out.mp3

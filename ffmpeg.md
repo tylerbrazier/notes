@@ -39,3 +39,11 @@ Set mp3 tags:
         -metadata artist="Blues Image" \
         -metadata track="6" \
         out.mp3
+
+Or:
+
+    ffmpeg -i in.mp3 -f ffmetadata metadata.txt
+    vi metadata.txt
+    ffmpeg -i in.mp3 -i metadata.txt \
+        -map_metadata 1 -c copy \
+        out.mp3

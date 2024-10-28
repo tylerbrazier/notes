@@ -1,0 +1,64 @@
+BP book overview posters downloadable from https://bibleproject.com/downloads/posters/
+
+Genesis:
+Most everyone agrees the book is divided:
+1~11 primeval history
+12~50 ancestral history
+Opinions differ on where the exact dividing line is and where subdivisions occur but most divide around this repeated phrase "these are the descendants of..." (or "this is the book of the descendants of..." in 5:1) - genealogies (toledot) which appears at:
+2:4 heavens and the earth
+5:1 Adam
+6:9 Noah
+10:1 sons of Noah
+10:32 sons of Noah (as summary)
+11:10 Shem
+11:27 Terah (beginning of ancestral history)
+25:12 Ishmael
+25:13 Ishmael (as reiteration)
+25:19 Isaac
+36:1 Esau
+36:9 Esau (as reiteration)
+37:2 Jacob
+IVP and BP both divide ancestral history into 3 parts:
+Abraham (IVP at 11:27)
+Jacob (and Isaac) (IVP at 25:19)
+Jacob's family (IVP at 37:2)
+
+Numbers: (Hebrew "In the Wilderness")
+Disagreement among scholars if Numbers even has an intended structure or edits haphazadly thrown in over time.
+IVP splits in half generationally 25||26 w/ subsections: 1-10|11-20|21-25||26-30|31-33|34-36
+BP splits locationally:
+1-10:10 Mt.Sinai
+10:11-12 travel
+13-19 wilderness of Paran
+20-21 travel
+22-36 plains of Moab
+
+Isaiah:
+Tim Mackie and IVP agree on this structure:
+Major sections: 1-12|13-27|28-39|40-55|56-66
+IVP breaks 1|2 and Bible Project breaks 48|49.
+BP divides the whole book at 39||40.
+Subsection breaks (both agree):
+5|6 23|24 36|39 48|49
+
+Mark:
+At least, Eusebius (and apparently Clement and Papuas) testifies that Peter's buddy Mark wrote the gospel:
+https://onlineancientwitness.wordpress.com/eusebius-church-history-book-2/#e2.15
+https://onlineancientwitness.wordpress.com/eusebius-church-history-book-3/#e3.39
+
+1 Thes:
+(background: Acts 17)
+http://earlychristianwritings.com/1thessalonians.html
+Author: undisputedly Paul
+Written: 50/51AD from Corinth (Acts 18:1-18)
+
+Galatians:
+Author: undisputedly Paul
+Written: 54AD
+
+Philippians:
+(background: Acts 16:11ff)
+http://earlychristianwritings.com/philippians.html
+http://earlychristianwritings.com/goodspeed/ch07.html
+Author: undisputedly Paul
+Written: 59~60AD from Rome

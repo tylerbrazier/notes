@@ -17,3 +17,5 @@ rather than the src dir itself.
 	-n dry run
 	--exclude '.*' exclude hidden files/dirs
 	--progress
+	--delete extra files on dest that aren't in src
+	--backup-dir=.trash --exclude=/.trash

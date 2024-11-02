@@ -27,6 +27,8 @@ https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html
 	apk info -a package    # show all info about package
 	apk info -W file       # which package owns the file
 	apk search ...
+	# add a package from edge branch in community repo:
+	apk add -X http://dl-cdn.alpinelinux.org/alpine/edge/community ...
 
 To install on my laptop, I flashed the standard image to a usb stick.
 These are the steps I took to install Alpine along side Windows (dualboot).

@@ -1,0 +1,36 @@
+--- Formatting ---
+To format a new USB drive as ext4 (will erase everything on it):
+
+	mkfs.ext4 -L LABEL /dev/sdxY
+	fdisk /dev/sdx
+	t   # change parition type
+	83  # Linux
+	w   # write and quit
+
+mkfs formats the partition but does not adjust the Partition Table of the disk;
+that's why you need to use fdisk to update the Table for that partition.
+
+--- Mounting ---
+Update /etc/fstab to allow your user to mount it without sudo/doas:
+
+	LABEL=...	/path	ext4	defaults,user	0	0
+
+Then you can just run `[u]mount /path`.
+This fstab entry will also cause it to be mounted on boot.
+On Alpine I had to install [u]mount from util-linux (apk add mount umount)
+to get this working right because busybox's implementation doesn't support
+the "user" flag well enough yet:
+https://git.busybox.net/busybox/tree/util-linux/mount.c#n321
+
+--- Permissions ---
+To allow anyone in the `backup` group to have rw access to the drive:
+
+	addgroup backup        # create backup group
+	addgroup tyler backup  # add user to it
+	mount                  # check & make sure drive is mounted at /path
+	chown :backup /path    # set the group at the top level
+	chmod g+rws /path      # s will cause files to inherit group from parent
+	# This next line requires acl to be installed (Access Control List).
+	# It (m)odifies the /path's (d)efault ACL so that (g)roup permissions
+	# for the backup group are rw for files and rwx for directories.
+	setfacl -d -m g:backup:rwx /path

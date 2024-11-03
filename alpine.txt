@@ -96,6 +96,9 @@ Now boot from the disk and finish setting up (as root):
 	zzz   # for suspend and hibernate
 	docs  # https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ#Documentation_for_all_packages
 	mandoc-apropos
+	mount   # mount & umount from util-linux have better support for 'user'
+	umount  # opt so normal user can umount a drive he mounted:
+	        # https://git.busybox.net/busybox/tree/util-linux/mount.c#n321
 
 	# use iwd instead of wpa_supplicant
 	rc-update del wpa_supplicant boot

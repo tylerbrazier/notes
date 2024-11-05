@@ -7,15 +7,20 @@ To format a new USB drive as ext4 (will erase everything on it):
 	83  # Linux
 	w   # write and quit
 
+(In my case, LABEL is BACKUP0 or BACKUP1, etc.)
 mkfs formats the partition but does not adjust the Partition Table of the disk;
 that's why you need to use fdisk to update the Table for that partition.
 
 --- Mounting ---
+Make a mountpoint e.g.
+
+	mkdir /backup0
+
 Update /etc/fstab to allow your user to mount it without sudo/doas:
 
-	LABEL=...	/path	ext4	defaults,user	0	0
+	LABEL=BACKUP0	/backup0	ext4	defaults,user	0	0
 
-Then you can just run `[u]mount /path`.
+Then you can just run `[u]mount /backup0` as your normal user.
 This fstab entry will also cause it to be mounted on boot.
 On Alpine I had to install [u]mount from util-linux (apk add mount umount)
 to get this working right because busybox's implementation doesn't support
@@ -34,3 +39,10 @@ To allow anyone in the `backup` group to have rw access to the drive:
 	# It (m)odifies the /path's (d)efault ACL so that (g)roup permissions
 	# for the backup group are rw for files and rwx for directories.
 	setfacl -d -m g:backup:rwx /path
+
+(In my case, /path is /backup0 or /backup1, etc.)
+
+--- Label ---
+To update a partition's label I installed e2fsprogs-extra and ran
+
+	e2label /dev/sdxY NEW_LABEL

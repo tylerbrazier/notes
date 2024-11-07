@@ -18,7 +18,7 @@ Make a mountpoint e.g.
 
 Update /etc/fstab to allow your user to mount it without sudo/doas:
 
-	LABEL=BACKUP0	/backup0	ext4	defaults,user	0	0
+	LABEL=BACKUP0	/backup0	ext4	defaults,user	0	2
 
 Then you can just run `[u]mount /backup0` as your normal user.
 This fstab entry will also cause it to be mounted on boot.

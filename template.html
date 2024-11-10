@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css.css">
+		<title>Example</title>
+	</head>
+	<body>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics#anatomy_of_an_html_document">
+			Anatomy of an HTML document (mdn)
+		</a></p>
 
-<!-- https://validator.w3.org/ -->
+		<p>DOCTYPE
+		<a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">
+			(mdn)
+		</a>&nbsp;
+		<a href="https://html.spec.whatwg.org/multipage/syntax.html#the-doctype">
+			(whatwg)
+		</a>
+		</p>
 
-<title>Example</title>
+		<p>&lt;html&gt; element
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">
+			 (mdn)
+		</a>&nbsp;
+		<a href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element">
+			(whatwg)
+		</a>
+		</p>
 
-<!--
-https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
-https://developers.google.com/web/fundamentals/design-and-ux/responsive/
--->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+		<p>&lt;meta&gt; viewport
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts#mobile_viewports">
+			(mdn)
+		</a>&nbsp;
+		<a href="https://web.dev/articles/responsive-web-design-basics">
+			(web.dev)
+		</a>
+		</p>
 
-<link rel="stylesheet" href="/example.css">
+		<p><a href="https://validator.w3.org/">
+			validator
+		</a></p>
 
-<p>&lt;html&gt;, &lt;head&gt;, and &lt;body&gt; elements are optional.</p>
-<p>Validate html files <a href="https://validator.w3.org/">here</a>.</p>
+		<script>
+			// Scripts should generally go last so that any DOM manipulations
+			// they do happen on elements that have already been loaded.
+		</script>
 
-<!--
-Scripts should generally go last so that any DOM manipulations they do happen
-on elements that have already been loaded.
--->
-<script src="example.js"></script>
+		<script src="javascript.js"></script>
+	</body>
+</html>
+<!-- vim: set ts=2 sw=2: -->

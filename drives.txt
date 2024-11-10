@@ -36,9 +36,9 @@ To allow anyone in the `backup` group to have rw access to the drive:
 	chown :backup /path    # set the group at the top level
 	chmod g+rws /path      # s will cause files to inherit group from parent
 	# This next line requires acl to be installed (Access Control List).
-	# It (m)odifies the /path's (d)efault ACL so that (g)roup permissions
-	# for the backup group are rw for files and rwx for directories.
-	setfacl -d -m g:backup:rwx /path
+	# It (R)ecursively (m)odifies the /path's (d)efault ACL so that (g)roup
+	# permissions # for the backup group are rw for files and rwx for dirs:
+	setfacl -R -d -m g:backup:rwx /path
 
 (In my case, /path is /backup0 or /backup1, etc.)
 

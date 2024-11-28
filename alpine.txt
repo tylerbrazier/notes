@@ -88,6 +88,7 @@ Now boot from the disk and finish setting up (as root):
 	nodejs
 	npm
 	mpv
+	gnupg
 	agetty  # for autologin
 	openssh-client
 	brightnessctl

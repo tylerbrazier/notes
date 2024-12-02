@@ -1,5 +1,16 @@
 /* Javascript Notes */
 
+// TODO make notes about:
+// `this` nuances
+// arrow functions vs regular
+// functional programming
+// closures
+// types
+// destructuring
+// spread operator
+// es6
+// modules
+// == vs ===
 
 // for...in iterates over INDEXES in arrays, KEYS in object (mnemonic: INdex)
 for (const index in ['a', 'b', 'c']) { /* index = 0, 1, 2   */ }

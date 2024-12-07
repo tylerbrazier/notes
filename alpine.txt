@@ -158,3 +158,9 @@ Now boot from the disk and finish setting up (as root):
 	# After reboot you'll need to reconnect to wifi with iwd:
 	iwctl
 	station wlan0 connect <Tab><Tab>
+
+	# Set up hibernate:
+	vi /etc/default/grub  # append to GRUB_CMDLINE_LINUX_DEFAULT
+		resume=/dev/sdXZ   # swap partition
+	grub-mkconfig -o /boot/grub/grub.cfg
+	ZZZ  # to hibernate

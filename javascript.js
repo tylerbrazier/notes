@@ -5,7 +5,6 @@
 // arrow functions vs regular
 // functional programming
 // closures
-// types
 // destructuring
 // spread operator
 // es6
@@ -25,6 +24,19 @@ const obj = { old_name: 'tyler' };
 const { old_name: newName } = obj;
 console.log(newName); // 'tyler'
 
+// Types:
+// JS is dynamically typed (variables aren't typed)
+// and weakly typed (allows implicit type coercions)
+// https://dorey.github.io/JavaScript-Equality-Table/
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+// 	typeof ...
+// 	'undefined'
+// 	'object' (including null)
+// 	'string'
+// 	'boolean'
+// 	'number'
+// 	'bigint'
+// 	'symbol'
 
 // immutable sorting (because array.sort() will modify array)
 var array = [3,2,1];

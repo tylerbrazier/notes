@@ -1,5 +1,6 @@
-# Arch Linux
 <https://www.archlinux.org/>
+
+# Desktop/Laptop
 
 ## Download/Install
 Download from <https://www.archlinux.org/download/>.
@@ -165,3 +166,34 @@ from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
 
 ## Pacman
 If `pacman -Syu` fails with key or signature errors try `pacman -S archlinux-keyring` then `pacman -Su` again.
+
+# Server
+
+<https://wiki.archlinux.org/title/Arch_Linux_on_a_VPS#DigitalOcean>
+Only the `cloud-init` image works for DO.
+
+Both `root` and `arch` had locked passwords (`passwd -Sa` outputs second field as `L`).
+I'm guessing it's because I had DO add my ssh key to the droplet.
+
+    pacman -Syu
+    pacman -S neovim
+
+    nvim /etc/ssh/sshd_config
+        PermitRootLogin prohibit-password
+        PasswordAuthentication no
+
+    sshd -t  # test configuration is valid (good if no output)
+    systemctl reload sshd
+
+In case ssh keys are lost, I still want to be able to log in thru DO console,
+so set a password for the `arch` user (he can `sudo`; see `/etc/sudoers.d/90-cloud-init-users`).
+
+    passwd arch
+
+Had to reboot before I could log in thru DO console.
+
+To add another public key to the server, upload it to github and use:
+
+    cd ~/.ssh
+    curl https://github.com/tylerbrazier.keys >> authorized_keys
+    sort -uo authorized_keys authorized_keys  # remove duplicates

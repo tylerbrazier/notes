@@ -2,6 +2,7 @@
 
 // TODO make notes about:
 // `this` nuances
+// what does `new` do
 // arrow functions vs regular
 // functional programming
 // closures

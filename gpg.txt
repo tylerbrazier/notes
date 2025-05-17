@@ -1,0 +1,27 @@
+gpg --list-keys
+	[S] = can Sign files, emails, commits, etc.
+	[C] = can Certify other keys (for web of trust)
+	[E] = can Encrypt (usually just subkeys)
+	[A] = can Authenticate (e.g. SSH)
+
+gpg --full-gen-key
+	RSA 4096 (widely supported)
+	Name: Tyler Brazier
+	Email: tyler@brazier.us
+	Comment: Latitude 5480 (unique device name)
+
+gpg -a --export tyler@brazier.us
+	-a/--armor for ASCII
+
+Upload the exported key to github.
+
+curl https://github.com/tylerbrazier.gpg | gpg --import
+
+gpg -e -a -r Latitude -r S21 file
+	-e/--encrypt
+	-a/--armor for ASCII
+	-r/--recipient (Name, Email or Comment)
+	All recipients can decrypt
+
+gpg -d file.asc
+	-d/--decrypt

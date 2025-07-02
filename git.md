@@ -23,3 +23,13 @@ or as separate commits (note the two `..` instead of three):
 
 These commands work in the midst of a merge conflict but not a rebase conflict.
 You'll need to `git rebase --abort`, run the commands, then rebase again.
+
+Tags:
+
+    git tag                  # list
+
+    git tag <name> <commit>  # create
+    git push origin <name>
+
+    git tag -d <name>        # delete
+    git push origin --delete <name>

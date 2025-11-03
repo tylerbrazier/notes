@@ -3,14 +3,14 @@
 # Desktop/Laptop
 
 ## Download/Install
+
 Download from <https://www.archlinux.org/download/>.
-Verify the ISO's integrity by comparing the md5 checksum on the download page
-to the output of `md5sum archlinux-*.iso`.
+Compare `sha256sum archlinux-*.iso` with what they have on the download page.
 
-Copy the ISO to a usb drive (`cat` works, but must be `root`).
-See <https://wiki.archlinux.org/index.php/USB_flash_installation_medium>.
+Copy the ISO to a usb drive:
+<https://wiki.archlinux.org/title/USB_flash_installation_medium>
 
-Follow the [Installation guide](https://wiki.archlinux.org/index.php/Installation_guide).
+Follow <https://wiki.archlinux.org/title/Installation_guide>.
 See **Packages** below for a list to `pacstrap`.
 
 ## Bootloader/GRUB

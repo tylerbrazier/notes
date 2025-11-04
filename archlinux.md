@@ -30,14 +30,22 @@ Follow <https://wiki.archlinux.org/title/Installation_guide>.
     base-devel  # for AUR
 
 ## Bootloader/GRUB
-I mounted the EFI system partition (esp) to `/efi` because `/boot` is where the kernels go and the esp isn't big enough to fit the kernels.
 
-For setting up Windows dual boot, os-prober couldn't detect the partition from the chroot so the following steps need to be done from the newly booted system:
+I mounted the EFI system partition (esp) to `/efi`
+because `/boot` is where the kernels go
+and the esp that was already on the laptop isn't big enough to fit the kernels.
+So before chrooting in:
 
-- Install `os-prober`
-- Edit `/etc/default/grub` and set `GRUB_DISABLE_OS_PROBER=false`
-- Mount the windows partition (doesn't matter where; `/mnt` works) and esp
-- Run again: `grub-mkconfig -o /boot/grub/grub.cfg`
+    mount --mkdir /dev/sdXY /mnt/efi  # instead of /mnt/boot
+
+(The esp can be removed from the generated `/etc/fstab` later)
+
+For os-prober to pick up windows, also mount it from outside the chroot like:
+
+    mount /dev/sdXY /mnt/mnt
+
+In the chroot, edit `/etc/default/grub` and set `GRUB_DISABLE_OS_PROBER=false`
+and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
 
 ## Post-installation
     useradd -m -G wheel -s /bin/bash tyler

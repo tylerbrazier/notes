@@ -55,12 +55,12 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
 
 ## Packages
     bash-completion
-    vim
+    neovim
     iwd         # for wifi
-    mandoc
+    man-db
     man-pages
     grub
-    efibootmgr  # https://wiki.archlinux.org/index.php/GRUB#UEFI_systems
+    efibootmgr  # https://wiki.archlinux.org/title/GRUB#UEFI_systems
     os-prober   # for dual-booting
     ntfs-3g     # to mount ntfs drives
     intel-ucode

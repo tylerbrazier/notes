@@ -11,7 +11,23 @@ Copy the ISO to a usb drive:
 <https://wiki.archlinux.org/title/USB_flash_installation_medium>
 
 Follow <https://wiki.archlinux.org/title/Installation_guide>.
-See **Packages** below for a list to `pacstrap`.
+`pacstrap` these:
+
+    bash-completion
+    neovim
+    iwd         # for wifi
+    man-db
+    man-pages
+    grub
+    efibootmgr  # https://wiki.archlinux.org/title/GRUB#UEFI_systems
+    os-prober   # for dual-booting
+    ntfs-3g     # to mount ntfs drives
+    intel-ucode
+    sudo
+    git
+    openssh
+    htop
+    base-devel  # for AUR
 
 ## Bootloader/GRUB
 I mounted the EFI system partition (esp) to `/efi` because `/boot` is where the kernels go and the esp isn't big enough to fit the kernels.
@@ -52,23 +68,6 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
   <https://wiki.archlinux.org/index.php/Swap#Swappiness>.
 - Regenerate the initramfs with `mkinitcpio -P`.
 - Reboot (or edit `/sys/power/resume` according to the wiki).
-
-## Packages
-    bash-completion
-    neovim
-    iwd         # for wifi
-    man-db
-    man-pages
-    grub
-    efibootmgr  # https://wiki.archlinux.org/title/GRUB#UEFI_systems
-    os-prober   # for dual-booting
-    ntfs-3g     # to mount ntfs drives
-    intel-ucode
-    sudo
-    git
-    openssh
-    htop
-    base-devel  # for AUR
 
 ## AUR
 <https://wiki.archlinux.org/title/Arch_User_Repository>

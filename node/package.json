@@ -2,9 +2,10 @@
 	"name": "",
 	"version": "",
 	"type": "module",
+	"scripts": {
+		"check": "biome check --write"
+	},
 	"devDependencies": {
-		"@eslint/js": "^9.9.1",
-		"eslint": "^9.9.1",
-		"eslint-formatter-unix": "^8.40.0"
+		"@biomejs/biome": "2.3.5"
 	}
 }

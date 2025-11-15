@@ -1,2 +1,4 @@
 node_modules/
-.*.swp
+
+# not needed for small personal projects
+package-lock.json

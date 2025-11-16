@@ -15,7 +15,6 @@ Follow <https://wiki.archlinux.org/title/Installation_guide>.
 
     bash-completion
     neovim
-    iwd         # for wifi
     man-db
     man-pages
     grub
@@ -29,6 +28,51 @@ Follow <https://wiki.archlinux.org/title/Installation_guide>.
     htop
     base-devel  # for AUR
 
+    # for gnome:
+    gnome-shell
+    gnome-terminal
+    gnome-control-center
+    gdm
+    networkmanager
+    firefox
+
+    # for sway:
+    sway
+    mesa        # intel video drivers
+    ttf-dejavu  # needs a font
+    foot        # sway's default term
+    foot-terminfo
+    dmenu
+    i3status
+    swayidle
+    swayimg
+    swaybg
+    wl-clipboard
+    iwd
+    mpv
+    mpv-mpris             # for play/pause/etc keys
+    playerctl             # for play/pause/etc keys (firefox/vlc/etc)
+    brightnessctl         # for adjusting screen brightness
+    grim                  # screenshots
+    slurp                 # select screen region for screenshots
+    xorg-server-xwayland  # needed to run X11 programs
+    firefox               # and/or chromium
+    alsa-utils            # sound control from userspace
+    archlinux-wallpaper   # backgrounds
+
+then `systemctl enable` these:
+
+    # needed for both iwd and networkmanager:
+    systemd-resolvd
+
+    # for gnome:
+    gdm
+    NetworkManager
+
+    # for sway:
+    iwd
+    seatd
+    
 ## Bootloader/GRUB
 
 I mounted the EFI system partition (esp) to `/efi`
@@ -54,7 +98,10 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
     useradd -m -G wheel -s /bin/bash tyler
     passwd tyler
 
-    EDITOR=vim visudo
+    # if using sway:
+    gpasswd -a tyler seat
+
+    EDITOR=nvim visudo
     # uncomment this line to allow wheel group to sudo w/out a password:
     %wheel ALL=(ALL:ALL) NOPASSWD: ALL
 
@@ -88,10 +135,13 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
     makepkg -sirc  # syncdeps, install, rmdeps, clean
 
 ## Network
-<https://wiki.archlinux.org/index.php/Network_configuration>
+
+(You can ignore this if using gnome+networkmanager)
+
+<https://wiki.archlinux.org/title/Network_configuration>
 
 ### Wireless
-For wireless, [iwd](https://wiki.archlinux.org/index.php/Iwd) is good.
+For wireless, [iwd](https://wiki.archlinux.org/title/Iwd) is good.
 Edit `/etc/iwd/main.conf` and add:
 
     [General]
@@ -108,7 +158,7 @@ Then:
     systemctl start/enable systemd-resolved.service
 
 ### Wired
-[systemd-networkd](https://wiki.archlinux.org/index.php/Systemd-networkd)
+[systemd-networkd](https://wiki.archlinux.org/title/Systemd-networkd)
 can handle getting an IP address (DHCP);
 create a file `/etc/systemd/network/20-wired.network` with:
 
@@ -124,8 +174,9 @@ Then:
     systemctl start/enable systemd-resolved.service
 
 ## Power management
+
 To prevent keyboard/mouse from waking the machine from suspend
-(see <https://wiki.archlinux.org/title/Power_management/Wakeup_triggers#Instantaneous_wakeups_from_suspend>):
+(<https://wiki.archlinux.org/title/Power_management/Wakeup_triggers#Instantaneous_wakeups_from_suspend>):
 
     # check enabled devices:
     cat /proc/acpi/wakeup
@@ -139,42 +190,11 @@ To prevent keyboard/mouse from waking the machine from suspend
         w /proc/acpi/wakeup -    -   -   -   XHC
 
 ## Auto login
-<https://wiki.archlinux.org/title/getty#Automatic_login_to_virtual_console>
 
-## GUI (sway)
-Install:
+(Ignore this if using a display manager like gdm)
 
-    sway
-    mesa        # intel video drivers
-    ttf-dejavu  # needs a font
-    foot        # sway's default term
-    foot-terminfo
-    dmenu
-    i3status
-    swayidle
-    swayimg
-    swaybg
-    wl-clipboard
-    mpv
-    mpv-mpris             # for play/pause/etc keys
-    playerctl             # for play/pause/etc keys (firefox/vlc/etc)
-    brightnessctl         # for adjusting screen brightness
-    grim                  # screenshots
-    slurp                 # select screen region for screenshots
-    xorg-server-xwayland  # needed to run X11 programs
-    firefox               # and/or chromium
-    alsa-utils            # sound control from userspace
-    archlinux-wallpaper   # backgrounds
-
-Then as root:
-
-    systemctl start/enable seatd.service
-    gpasswd -a tyler seat
-
-To automatically start sway on login:
-<https://wiki.archlinux.org/title/sway#Automatically_on_TTY_login>.
-(I put the configuration in `~/.bash_profile` since my `~/.bashrc` may be overwritten
-from [dotfiles](https://github.com/tylerbrazier/dotfiles).)
+- <https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console>
+- <https://wiki.archlinux.org/title/Sway#Automatically_on_TTY_login>
 
 ## Pacman
 If `pacman -Syu` fails with key or signature errors try

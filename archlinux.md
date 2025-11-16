@@ -91,7 +91,7 @@ For os-prober to pick up windows, also mount it from outside the chroot like:
 In the chroot, edit `/etc/default/grub` and set `GRUB_DISABLE_OS_PROBER=false`
 and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
 
-## Post-installation
+## Post-install
 
     timedatectl set-ntp true
 
@@ -108,6 +108,22 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
     # as the new user:
     ssh-keygen
     git clone git@github.com:tylerbrazier/dotfiles.git
+
+## Power management
+
+To prevent keyboard/mouse from waking the machine from suspend
+(<https://wiki.archlinux.org/title/Power_management/Wakeup_triggers#Instantaneous_wakeups_from_suspend>):
+
+    # check enabled devices:
+    cat /proc/acpi/wakeup
+
+    # toggle enabled/disabled by echoing the device name to the file:
+    echo XHC > /proc/acpi/wakeup
+
+    # to persist across reboots:
+    vim /etc/tmpfiles.d/100-disable-device-wakeup.conf
+        # Path              Mode UID GID Age Argument
+        w /proc/acpi/wakeup -    -   -   -   XHC
 
 ## Hibernation
 
@@ -129,11 +145,6 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
 - Regenerate the initramfs with `mkinitcpio -P`.
 - Reboot (or edit `/sys/power/resume` according to the wiki).
 
-## AUR
-<https://wiki.archlinux.org/title/Arch_User_Repository>
-
-    makepkg -sirc  # syncdeps, install, rmdeps, clean
-
 ## Network
 
 (You can ignore this if using gnome+networkmanager)
@@ -141,6 +152,7 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
 <https://wiki.archlinux.org/title/Network_configuration>
 
 ### Wireless
+
 For wireless, [iwd](https://wiki.archlinux.org/title/Iwd) is good.
 Edit `/etc/iwd/main.conf` and add:
 
@@ -158,6 +170,7 @@ Then:
     systemctl start/enable systemd-resolved.service
 
 ### Wired
+
 [systemd-networkd](https://wiki.archlinux.org/title/Systemd-networkd)
 can handle getting an IP address (DHCP);
 create a file `/etc/systemd/network/20-wired.network` with:
@@ -173,32 +186,12 @@ Then:
     systemctl start/enable systemd-networkd.service
     systemctl start/enable systemd-resolved.service
 
-## Power management
-
-To prevent keyboard/mouse from waking the machine from suspend
-(<https://wiki.archlinux.org/title/Power_management/Wakeup_triggers#Instantaneous_wakeups_from_suspend>):
-
-    # check enabled devices:
-    cat /proc/acpi/wakeup
-
-    # toggle enabled/disabled by echoing the device name to the file:
-    echo XHC > /proc/acpi/wakeup
-
-    # to persist across reboots:
-    vim /etc/tmpfiles.d/100-disable-device-wakeup.conf
-        # Path              Mode UID GID Age Argument
-        w /proc/acpi/wakeup -    -   -   -   XHC
-
 ## Auto login
 
 (Ignore this if using a display manager like gdm)
 
 - <https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console>
 - <https://wiki.archlinux.org/title/Sway#Automatically_on_TTY_login>
-
-## Pacman
-If `pacman -Syu` fails with key or signature errors try
-`pacman -S archlinux-keyring` then `pacman -Su` again.
 
 # Server
 
@@ -232,3 +225,14 @@ To add another public key to the server, upload it to github and use:
     cd ~/.ssh
     curl https://github.com/tylerbrazier.keys >> authorized_keys
     sort -uo authorized_keys authorized_keys  # remove duplicates
+
+# AUR
+
+<https://wiki.archlinux.org/title/Arch_User_Repository>
+
+    makepkg -sirc  # syncdeps, install, rmdeps, clean
+
+# Pacman
+
+If `pacman -Syu` fails with key or signature errors try
+`pacman -S archlinux-keyring` then `pacman -Su` again.

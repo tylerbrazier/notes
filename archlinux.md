@@ -48,6 +48,9 @@ In the chroot, edit `/etc/default/grub` and set `GRUB_DISABLE_OS_PROBER=false`
 and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
 
 ## Post-installation
+
+    timedatectl set-ntp true
+
     useradd -m -G wheel -s /bin/bash tyler
     passwd tyler
 

@@ -59,11 +59,13 @@ and run `grub-mkconfig -o /boot/grub/grub.cfg` (after `grub-install`)
     ssh-keygen
     git clone git@github.com:tylerbrazier/dotfiles.git
 
-To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation):
+## Hibernation
 
-- Set up a swap file: <https://wiki.archlinux.org/index.php/swap#Swap_file>.
-- Add the `resume` hook to `/etc/mkinitcpio.conf` (see
-  <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Configure_the_initramfs>).
+<https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Hibernation>
+
+- Set up a swap file: <https://wiki.archlinux.org/title/Swap#Swap_file>.
+- Add the `resume` hook to `/etc/mkinitcpio.conf`:
+  <https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Configure_the_initramfs>
 - Run `filefrag -v /swapfile` and copy the first value
   (without trailing periods) under `physical_offset` from the first row.
 - Also copy the UUID of the disk with the `/swapfile` using
@@ -73,7 +75,7 @@ To set up [hibernation](https://wiki.archlinux.org/index.php/Power_management/Su
   `resume=UUID=<id>` and `resume_offset=<offset>`
 - Regenerate grub config: `grub-mkconfig -o /boot/grub/grub.cfg`.
 - Consider reducing swappiness if you have plenty of RAM:
-  <https://wiki.archlinux.org/index.php/Swap#Swappiness>.
+  <https://wiki.archlinux.org/title/Swap#Swappiness>.
 - Regenerate the initramfs with `mkinitcpio -P`.
 - Reboot (or edit `/sys/power/resume` according to the wiki).
 

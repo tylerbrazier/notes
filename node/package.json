@@ -3,7 +3,8 @@
 	"version": "",
 	"type": "module",
 	"scripts": {
-		"check": "biome check --write"
+		"check": "biome check --write",
+		"test": "node --test"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5"

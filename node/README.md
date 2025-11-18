@@ -8,6 +8,8 @@ Development Setup:
 	# lint and format
 	npm run check [...files]
 
+	npm test
+
 	node --watch ...
 
 For neovim, install <https://github.com/neovim/nvim-lspconfig>

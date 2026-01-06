@@ -25,6 +25,7 @@ Commands and arguments can often be completed with `Tab`
   + `--restart=unless-stopped` restart the container if it exits
     (unless stopped by `docker container stop`)
   + `--name=whatever` (otherwise docker automatically names the container)
+  + `--rm` removes the container when it exits
 - interactive shell in a new container: `docker run -it <image> /bin/sh`
 - interactive shell in a running container: `docker exec -it <name> /bin/sh`
 - stop running container: `docker container stop <name>`

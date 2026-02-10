@@ -1,1 +1,20 @@
 Miscellaneous notes
+
+Right now there's a mix of plain text and markdown files because I've gone
+back and forth about which I prefer.
+
+		Pros			Cons
+txt:	- Simple/WYSIWYG	- Old, don't see it much anymore
+	- No tools needed
+--------------------------------------------------------------------------------
+md:	- Nice rendering	- but not really in editor (boilerplate e.g.```)
+	- Modern, "standard"	- but not really; many different implementations
+				- Need to be aware of rules e.g. spacing around
+				  lists and what characters to escape
+				- Needs tooling for rendering and linting
+
+Seems like markdown has more cons than pros. Plus, I spend 95% of the time
+reading/editing the files in the editor, not the browser; when I'm editing
+markdown I'm always thinking about how this will be rendered (and the rules to
+make it render right) without seeing it rendered. Plus I value simplicity.
+For these reasons I think I'm going to start migrating these md docs to txt.

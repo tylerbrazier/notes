@@ -12,3 +12,24 @@ Keyboard shortcuts:
 	up/down		seek 60 seconds
 	</>		back/forward in playlist
 	enter		forward in playlist
+	/ and *		decrease/increase volume
+
+Example ~/.config/mpv/input.conf:
+
+	# See /usr/share/doc/mpv/input.conf
+
+	# Press ~ to turn on shuffle
+	~ playlist-shuffle ; show-text "shuffle"
+
+	# Shift+D to delete current file; use for filtering unwanted songs
+	D run rm "${path}" ; show-text "DELETED"
+
+Example ~/.config/mpv/mpv.conf
+
+	# See /usr/share/doc/mpv/mpv.conf
+
+	# Don't bother showing cover art
+	no-audio-display
+
+	# In a quiet place the lowest volume isn't low enough
+	volume=75

@@ -1,0 +1,7 @@
+What to backup when changing phones:
+- contacts
+- texts
+- DCIM
+- 2FA export
+- podcasts
+- check other apps

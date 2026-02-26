@@ -1,0 +1,52 @@
+# https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+#
+# Lines are called RECORDS by awk (separated by newlines).
+# Words in a line are called FIELDS (separated by spaces).
+#
+# Awk runs thru its script FOR EACH line of input.
+# Each line of script has the form: `pattern { action }`.
+# If the `pattern` matches the current line of input, awk runs the action.
+#
+# Common built-in variables:
+# $0: current line (record)
+# $1: first field
+# $2: second field, etc.
+# NR: number of records in the input
+# NF: number of fields in the current record
+# FS: field separator (space/tab by default)
+# OFS: output field separator (space by default)
+# RS: record separator (newline by default)
+# ORS: output record separator (newline by default)
+#
+# Examples:
+#
+# $ echo '
+#   1 2
+#   3 4
+#   5 6
+#   7 8
+#   ' | awk '$1 >= 5 || $2 == 2 { print $0 }'
+# 1 2
+# 5 6
+# 7 8
+#
+# $ cal -v dec 2022
+#     December 2022
+# Su     4 11 18 25
+# Mo     5 12 19 26
+# Tu     6 13 20 27
+# We     7 14 21 28
+# Th  1  8 15 22 29
+# Fr  2  9 16 23 30
+# Sa  3 10 17 24 31
+#
+# $ cal -v dec 2022 | awk '
+#   NR==1 {printf "%s %d\n", $1, $2}
+#   NR >1 {for(i=2;i<=NF;i++) printf "%02d %s\n", $i, $1}
+#   ' | sort -n
+# December 2022
+# 01 Th
+# 02 Fr
+# ...
+# 30 Fr
+# 31 Sa

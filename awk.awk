@@ -11,7 +11,7 @@
 # $0: current line (record)
 # $1: first field
 # $2: second field, etc.
-# NR: number of records in the input
+# NR: number of the current record
 # NF: number of fields in the current record
 # FS: field separator (space/tab by default)
 # OFS: output field separator (space by default)
@@ -50,3 +50,18 @@
 # ...
 # 30 Fr
 # 31 Sa
+
+BEGIN {
+	print "BEGIN block happens before processing input"
+
+	# to handle windows-style line endings:
+	#RS = "\r\n"
+}
+
+/re[gj]ex/ {
+	print "found line containing regex/rejex: " $0
+}
+
+END {
+	print "END block happens after processing input"
+}

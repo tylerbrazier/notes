@@ -1,0 +1,22 @@
+OAuth 2.0 is a framework (not rigid protocol) for authZ.
+- doesn't define token format - could be string or JWT
+- doesn't define what scopes are possible - that's up to the id provider
+
+OpenID is standard protocol for authN.
+- v1 and v2 had problems
+- today "OpenID" almost always means "OpenID Connect"
+
+OpenID Connect (OIDC) built on top of OAuth 2.0.
+- defines mandatory "openid" scope, and other optional standard scopes
+- uses signed JWT as the ID token
+
+SSO is a concept (implemented by SAML or OIDC)
+
+https://developer.okta.com/docs/concepts/oauth-openid/
+
+OAuth provides the secure communication channels and the mechanism for requesting
+tokens, while OIDC defines a standard language to speak over those channels.
+
+--- Scopes ---
+Scopes are an Oauth 2.0 concept.
+They're sent by an app to request permissions

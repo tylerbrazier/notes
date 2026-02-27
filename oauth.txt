@@ -13,10 +13,11 @@ OpenID Connect (OIDC) built on top of OAuth 2.0.
 SSO is a concept (implemented by SAML or OIDC)
 
 https://developer.okta.com/docs/concepts/oauth-openid/
+https://infosec.mozilla.org/guidelines/iam/openid_connect.html
 
 OAuth provides the secure communication channels and the mechanism for requesting
 tokens, while OIDC defines a standard language to speak over those channels.
 
 --- Scopes ---
 Scopes are an Oauth 2.0 concept.
-They're sent by an app to request permissions
+They're sent by an app to request permissions.

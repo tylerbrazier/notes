@@ -20,4 +20,19 @@ tokens, while OIDC defines a standard language to speak over those channels.
 
 --- Scopes ---
 Scopes are an Oauth 2.0 concept.
-They're sent by an app to request permissions.
+They're sent by the app to request permissions from IdP/OP.
+OIDC required scope is "openid".
+OIDC optional standard scopes:
+https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims
+- profile
+- email
+- address
+- phone
+IdP/OP then responds with claims for those scopes.
+
+--- Claims ---
+IdP/OP responds with claims that are associated with requested scopes.
+There can be multiple claims per requested scope.
+Think of scopes as buckets for claims.
+OIDC standard claims:
+https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims

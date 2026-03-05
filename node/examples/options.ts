@@ -1,3 +1,8 @@
+/* The node stdlib often uses this pattern of using
+ * required args as positional and grouping
+ * optional args (with defaults) in an object as the last param.
+ * https://nodejs.org/docs/latest/api/
+ */
 function withOptions(
 	required: string,
 	options: {

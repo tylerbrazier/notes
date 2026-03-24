@@ -1,0 +1,3 @@
+npm ls -g
+npm update -g
+npm uninstall -g <pkg>

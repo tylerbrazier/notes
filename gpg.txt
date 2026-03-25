@@ -1,27 +1,60 @@
-gpg --list-keys
+There's two ways to go about it:
+1. generate a single keypair
+	pros:
+	- one identity
+	cons:
+	- have to keep private on diff machines
+2. generate a keypair per machine
+	pros:
+	- no fussing with copying secret key around
+	cons:
+	- have to manage groups; encrypt for multiple recipients
+
+The problem of moving a private to different machines is big enough that
+I've decided to just make a keypair per machine. This is also a bit more secure
+than exposing the same key on several machines.
+
+gpg -k (--list-public-keys)
+gpg -K (--list-secret-keys)
+	pub = public
+	sec = secret
 	[S] = can Sign files, emails, commits, etc.
 	[C] = can Certify other keys (for web of trust)
 	[E] = can Encrypt (usually just subkeys)
 	[A] = can Authenticate (e.g. SSH)
 
 gpg --full-gen-key
-	RSA 4096 (widely supported)
+	ECC (default is most secure)
 	Name: Tyler Brazier
-	Email: tyler@brazier.us
-	Comment: Latitude 5480 (unique device name)
+	Email: tyler@example.com
+	Comment: Laptop (unique device name)
 
-gpg -a --export tyler@brazier.us
-	-a/--armor for ASCII
+gpg --export (public key)
+	-a/--armor (for ASCII instead of binary)
+	tyler@example.com
 
 Upload the exported key to github.
 
 curl https://github.com/tylerbrazier.gpg | gpg --import
 
-gpg -e -a -r Latitude -r S21 file
-	-e/--encrypt
-	-a/--armor for ASCII
-	-r/--recipient (Name, Email or Comment)
-	All recipients can decrypt
+gpg -e/--encrypt
+	-a/--armor (for ASCII instead of binary)
+	-r/--recipient Laptop (by Name, Email or Comment)
+	-r/--recipient Phone (all recipients can decrypt)
+	file_to_encrypt
 
-gpg -d file.asc
-	-d/--decrypt
+gpg -d/--decrypt file.asc
+
+gpg --delete-secret-keys ...
+gpg --delete-keys ...
+
+Change passphrase:
+gpg --edit-key tyler
+> passwd
+> save
+
+--- Groups ---
+Add to ~/.gnupg/gpg.conf
+	group pals = jesus@kingdom... c.s.lewis@...
+
+gpg -ear pals file

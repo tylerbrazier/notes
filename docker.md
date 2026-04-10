@@ -1,6 +1,8 @@
 # Docker notes
 
-Commands and arguments can often be completed with `Tab`
+Commands and arguments can often be completed with `Tab`.
+
+Pipe wide output thru `less -S`.
 
 ## Images
 - an image is built from a Dockerfile
@@ -50,6 +52,26 @@ This usually includes things like:
     .gitignore
 
 <https://docs.docker.com/engine/reference/builder/#dockerignore-file>
+
+## Compose
+
+In `docker-compose.yaml`:
+
+    services:
+      whatever:
+        container_name: whatever_you_want
+        image: ...
+        env_file: ...
+        ports:
+          - "80:8080"
+        healthcheck:
+          # could use curl/wget, otherwise this checks for listening:
+          test: ["CMD", "nc", "-z", "localhost", "8080"]
+          interval: 5s
+          retries: 12
+          timeout: 1s
+
+`docker compose up -d --wait` waits for healthcheck.
 
 ## Troubleshooting
 

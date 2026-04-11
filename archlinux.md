@@ -193,6 +193,16 @@ Then:
 - <https://wiki.archlinux.org/title/Getty#Automatic_login_to_virtual_console>
 - <https://wiki.archlinux.org/title/Sway#Automatically_on_TTY_login>
 
+## Android
+
+<https://wiki.archlinux.org/title/Android>
+
+<https://wiki.archlinux.org/title/Media_Transfer_Protocol>
+
+    sudo pacman -S android-file-transfer
+    aft-mtp-mount ~/mnt
+    fusermount -u ~/mnt #unmount
+
 # Server
 
 <https://wiki.archlinux.org/title/Arch_Linux_on_a_VPS#DigitalOcean>

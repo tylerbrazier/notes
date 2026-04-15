@@ -1,3 +1,10 @@
+For encryption:
+	public key encrypts, private decrypts
+	(anyone can send you a message)
+Reverse for authentication: 
+	private signs, public verifies
+	(anyone can see your signature)
+
 --- Oauth ---
 OAuth 2.0 is a framework (not rigid protocol) for authZ.
 - doesn't define token format - could be string or JWT

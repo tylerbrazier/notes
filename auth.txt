@@ -44,3 +44,40 @@ There can be multiple claims per requested scope.
 Think of scopes as buckets for claims.
 OIDC standard claims:
 https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims
+
+--- OIDC Flow ---
+
+"Client" App       IdP
+  (service)      (aka OP)
+        ^   \     ^  /
+         \   2   /  3
+          1   \ /  /
+           \   v  v
+            Browser
+
+1. user clicks "login with Google/Github/etc."
+2. App redirects browser to IdP /authorize with
+   - client_id
+   - scope (app wants access to? openid email profile)
+   - redirect_uri
+3. IdP shows login page
+   - after login, IdP says "allow App to access email & profile?"
+
+"Client" App --5--> IdP
+ (service)  <--6-- (aka OP)
+           ^     /   
+            \   4   
+             \ /   
+              v   
+           Browser
+
+4. IdP sends browser to redirect_uri with
+   - code (short lived)
+5. App calls /token with
+   - code
+   - client_id
+   - client_secret (otherwise anyone could call /token)
+6. IdP responds with JSON
+   - id_token (signed JWT w/ claims iss,sub,aud,exp,email,name,picture,etc)
+   - access_token (used to call other apis on behalf of user; often JWT)
+At this point the Client checks the signature of the id_token

@@ -1,5 +1,20 @@
 https://www.grymoire.com/Unix/Sed.html
 
+Similar to awk, a sed script is made up of editing commands with the form:
+	[address]function
+so:
+	sed '7d' < file   # deletes 7th line
+
+	sed '1,7p' < file # print lines 1 thru 7 (-n to omit the rest)
+
+	sed '/a/ i\                  # can put space between address & function
+	next line contains a' < file # inserts above each line matching pattern
+
+	sed '$ r other_file' < file # reads other_file contents to end of file
+
+You can put space between address and function.
+Without an address, it operates on every line.
+
 To change values between sections in .ini files:
 	sed '
 	# The following works even for the last section in the file,

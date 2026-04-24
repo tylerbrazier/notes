@@ -9,3 +9,7 @@ Convert heic to jpeg:
 Compress an image to 10% of its original quality:
 
     magick input.jpg -quality 10% out.jpg
+
+PDF to JPG (using `poppler`):
+
+    pdftoppm -jpeg input.pdf output

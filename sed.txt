@@ -16,6 +16,10 @@ so:
 You can put space between address and function.
 Without an address, it operates on every line.
 
+# Capture groups
+echo 'live on bread' | sed 's/\(.*\) bread/\1 word/'
+live on word
+
 To change values between sections in .ini files:
 	sed '
 	# The following works even for the last section in the file,

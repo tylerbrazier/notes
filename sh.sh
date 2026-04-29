@@ -31,3 +31,28 @@ parameter_expansion() {
 	echo '${var%%/*} ->' "${var%%/*}"  # one
 }
 parameter_expansion
+
+arrays() {
+	simple_array='
+	each
+	cannot
+	have
+	spaces
+	'
+	# don't quote around $simple_array
+	for i in $simple_array; do
+		echo "simple_array entry: $i"
+	done
+
+	allows_comments=$(echo '
+	only
+	show
+	#commented
+	uncommented
+	lines #trim this too
+	' | sed 's/#.*//')
+	for i in $allows_comments; do
+		echo "allows_comments entry: $i"
+	done
+}
+arrays

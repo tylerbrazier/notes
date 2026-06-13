@@ -1,0 +1,16 @@
+fruit, veggies
+triscuits
+PB, syrup
+torillas
+cereal
+oatmeal
+coffee, sweet stuff
+beer
+pop, bubbler
+
+Cold stuff
+----------
+meat (salami, ...)
+milk
+cheese
+frozen pizza

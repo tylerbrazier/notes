@@ -1,7 +1,7 @@
 fruit, veggies
 triscuits
 PB, syrup
-torillas
+tortillas
 cereal
 oatmeal
 coffee, sweet stuff
@@ -12,5 +12,7 @@ Cold stuff
 ----------
 meat (salami, ...)
 milk
+eggs
 cheese
 frozen pizza
+frozen burritos

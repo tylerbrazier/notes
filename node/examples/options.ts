@@ -5,17 +5,8 @@
  */
 function withOptions(
 	required: string,
-	options: {
-		num?: number,
-		bool?: boolean,
-	} = {}
+	{ num = 7, bool = true } = {} // options
 ) {
-	// set the defaults for optional args
-	const {
-		num = 7,
-		bool = true,
-	} = options
-
 	console.log(required, `{ num=${num}, bool=${bool} }`)
 }
 

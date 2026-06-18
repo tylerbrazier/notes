@@ -1,6 +1,7 @@
 fruit, veggies
 triscuits
 PB, syrup
+chips, salsa
 tortillas
 cereal
 oatmeal
@@ -10,7 +11,7 @@ pop, bubbler
 
 Cold stuff
 ----------
-meat (salami, ...)
+meat (salami, kielbasa, ...)
 milk
 eggs
 cheese

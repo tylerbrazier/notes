@@ -1,0 +1,5 @@
+https://pubs.opengroup.org/onlinepubs/9799919799/
+
+That's the latest version as of 2026-06-27.
+Check the header of the page for:
+	"A newer edition of this standard exists"

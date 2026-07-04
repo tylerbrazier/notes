@@ -5,14 +5,14 @@ chips, salsa
 tortillas
 cereal
 oatmeal
-coffee, sweet stuff
+coffee
 beer
 pop, bubbler
 
 Cold stuff
 ----------
-meat (salami, kielbasa, ...)
-milk
+meat (salami, kielbasa, bacon, chicken, ...)
+milk, sweet milk for coffee
 eggs
 cheese
 frozen pizza

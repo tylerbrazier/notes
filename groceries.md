@@ -8,9 +8,11 @@ Groceries
 - tortillas
 - cereal
 - oatmeal
+- treats, protein bars
 - coffee
 - beer
 - pop, bubbler
+- juice
 
 Cold stuff
 ----------

@@ -21,17 +21,14 @@ withOptions("all options defined:", { num: 12, bool: false });
 // or there are options with several possible types
 function withComplexOptions(
 	required: string,
-	options: {
-		str?: string; // defaults to undefined if unspecified
+	{
+		str = undefined,
+		numOrBool = 40,
+	}: {
+		str?: string;
 		numOrBool?: number | boolean;
-	} = {
-		// can't define defaults in here because this whole object
-		// gets replaced when the function is called with any options
-	},
+	} = {},
 ) {
-	// defaults need to be defined in the function body
-	const { str, numOrBool = 40 } = options;
-
 	console.log(
 		"withComplexOptions:",
 		required,

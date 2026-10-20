@@ -45,7 +45,7 @@ Think of scopes as buckets for claims.
 OIDC standard claims:
 https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims
 
---- OIDC Flow ---
+--- OIDC Authorization Code Flow (person at the keyboard) ---
 
 "Client" App       IdP
   (service)      (aka OP)
@@ -81,3 +81,7 @@ https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims
    - id_token (signed JWT w/ claims iss,sub,aud,exp,email,name,picture,etc)
    - access_token (used to call other apis on behalf of user; often JWT)
 At this point the Client checks the signature of the id_token
+
+--- OIDC Client Credentials Flow (server to server) ---
+
+TODO

@@ -1,6 +1,16 @@
+# [imagemagick](https://imagemagick.org/)
+
+Get info about an image:
+
+    magick identify input.jpg
+
 Resize an image to 20% of the original:
 
     magick input.jpg -resize 20% output.jpg
+
+Resize an image to specific size:
+
+    magick input.jpg -resize 800x600 output.jpg
 
 Convert heic to jpeg:
 

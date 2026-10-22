@@ -1,12 +1,14 @@
+# [ffmpeg](https://ffmpeg.org/)
+
 For less output:
 
     ffmpeg -hide_banner -v warning ...
 
-Convert .mkv to .mp4 (https://askubuntu.com/a/396906):
+Convert .mkv to .mp4 (<https://askubuntu.com/a/396906>):
 
     ffmpeg -i input.mkv -codec copy output.mp4
 
-Convert other audio to .mp3 (https://stackoverflow.com/q/3255674):
+Convert other audio to .mp3 (<https://stackoverflow.com/q/3255674>):
 
     ffmpeg -i input.whatever -acodec libmp3lame output.mp3
     # Though I found that leaving out -acodec does the same thing:
@@ -24,8 +26,7 @@ Combine `-ss` and `-to` for slicing:
 
     ffmpeg -ss 00:02:00 -to 00:03:00 -i in.mp3 out.mp3
 
-Add album art to mp3:
-(https://stackoverflow.com/q/18710992)
+Add album art to mp3 (<https://stackoverflow.com/q/18710992>):
 
     ffmpeg -i in.mp3 -i cover.jpg \
         -map 0:0 -map 1:0 \
@@ -34,8 +35,7 @@ Add album art to mp3:
         -metadata:s:v comment="Cover (front)" \
         out.mp3
 
-Set mp3 tags:
-(https://wiki.multimedia.cx/index.php/FFmpeg_Metadata#MP3)
+Set mp3 tags (<https://wiki.multimedia.cx/index.php/FFmpeg_Metadata#MP3>):
 
     ffmpeg -i in.mp3 \
         -metadata title="Ride Captain Ride" \

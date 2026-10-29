@@ -3,7 +3,7 @@ Groceries
 
 - fruit, veggies
 - triscuits
-- PB, syrup
+- PB & some kind of sweet spread
 - chips, salsa
 - tortillas
 - cereal
@@ -19,6 +19,7 @@ Cold stuff
 
 - meat (salami, kielbasa, bacon, chicken, ...)
 - milk, sweet milk for coffee
+- yogurt
 - eggs
 - cheese
 - frozen pizza
